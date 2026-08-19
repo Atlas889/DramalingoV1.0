@@ -1,0 +1,2264 @@
+{
+  "f65e9da5-21d9-4bd2-beb0-1dea544c7d48": {
+    "status": "done",
+    "description": "老友记 · S02E01 / S02E02 / S02E03",
+    "result": {
+      "total_files": 3,
+      "total_lines": 959,
+      "passed_lines": 663,
+      "new_nodes": 456,
+      "merged_nodes": 14,
+      "filter_rate": 0.30865484880083416,
+      "ai_tagging_success": 386,
+      "rule_fallback": 70,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-19T08:27:08.893066+00:00",
+    "started_at": "2026-05-19T08:27:08.894068+00:00",
+    "finished_at": "2026-05-19T08:28:17.870522+00:00"
+  },
+  "11b81c48-0cea-4923-a1d4-48ea34c4196d": {
+    "status": "done",
+    "description": "老友记 · S02E04 / S02E05 / S02E06 / S02E07 等5集",
+    "result": {
+      "total_files": 5,
+      "total_lines": 1593,
+      "passed_lines": 1147,
+      "new_nodes": 570,
+      "merged_nodes": 15,
+      "filter_rate": 0.2799748901443817,
+      "ai_tagging_success": 520,
+      "rule_fallback": 50,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-19T08:52:07.395464+00:00",
+    "started_at": "2026-05-19T08:52:07.396466+00:00",
+    "finished_at": "2026-05-19T08:53:30.951161+00:00"
+  },
+  "afb070a2-01fc-48bf-978b-dbd94f12bc65": {
+    "status": "done",
+    "description": "老友记 · S02E08 / S02E09 / S02E10 / S02E11 等11集",
+    "result": {
+      "total_files": 11,
+      "total_lines": 3585,
+      "passed_lines": 2636,
+      "new_nodes": 1433,
+      "merged_nodes": 55,
+      "filter_rate": 0.2647140864714086,
+      "ai_tagging_success": 1253,
+      "rule_fallback": 180,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-19T08:54:51.461140+00:00",
+    "started_at": "2026-05-19T08:54:51.461140+00:00",
+    "finished_at": "2026-05-19T08:57:38.826969+00:00"
+  },
+  "0b43b820-c707-4e42-951d-1dc7878266d4": {
+    "status": "done",
+    "description": "老友记 · S02E19 / S02E20 / S02E21 / S02E22 等6集",
+    "result": {
+      "total_files": 6,
+      "total_lines": 2077,
+      "passed_lines": 1561,
+      "new_nodes": 902,
+      "merged_nodes": 3,
+      "filter_rate": 0.248435243139143,
+      "ai_tagging_success": 882,
+      "rule_fallback": 20,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-19T09:07:59.266721+00:00",
+    "started_at": "2026-05-19T09:07:59.267728+00:00",
+    "finished_at": "2026-05-19T09:12:07.508334+00:00"
+  },
+  "1f1a26fe-c985-4d65-8fbf-af60e983cf9d": {
+    "status": "done",
+    "description": "老友记 · S03E01 / S03E02 / S03E03 / S03E04 等25集",
+    "result": {
+      "total_files": 25,
+      "total_lines": 8584,
+      "passed_lines": 6442,
+      "new_nodes": 3067,
+      "merged_nodes": 40,
+      "filter_rate": 0.2495340167753961,
+      "ai_tagging_success": 3027,
+      "rule_fallback": 40,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-19T09:14:31.704074+00:00",
+    "started_at": "2026-05-19T09:14:31.705076+00:00",
+    "finished_at": "2026-05-19T09:28:21.264654+00:00"
+  },
+  "26056c7c-92bd-487b-9b07-fee6f5bc1cae": {
+    "status": "done",
+    "description": "",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 498,
+      "nodes_total": 9409,
+      "high_conf": 0,
+      "low_conf": 267,
+      "unmatched": 3,
+      "failed": 47,
+      "clips_generated": 0,
+      "subtitle_fallback": 0
+    },
+    "error": null,
+    "created_at": "2026-05-19T15:55:40.240682+00:00",
+    "started_at": "2026-05-19T15:55:40.241973+00:00",
+    "finished_at": "2026-05-19T16:10:14.625076+00:00"
+  },
+  "a7480841-f2ea-4b22-8009-b4013824c0d6": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E01",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 498,
+      "nodes_total": 9409,
+      "high_conf": 0,
+      "low_conf": 267,
+      "unmatched": 3,
+      "failed": 47,
+      "clips_generated": 0,
+      "subtitle_fallback": 0
+    },
+    "error": null,
+    "created_at": "2026-05-20T00:27:46.999161+00:00",
+    "started_at": "2026-05-20T00:27:46.999161+00:00",
+    "finished_at": "2026-05-20T00:34:33.542962+00:00"
+  },
+  "5886a47b-bec9-4a0f-9d54-028df3c98f9c": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E01",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 501,
+      "nodes_total": 9409,
+      "high_conf": 39,
+      "low_conf": 245,
+      "unmatched": 5,
+      "failed": 0,
+      "clips_generated": 57,
+      "subtitle_fallback": 1
+    },
+    "error": null,
+    "created_at": "2026-05-20T03:49:48.089899+00:00",
+    "started_at": "2026-05-20T03:49:48.090902+00:00",
+    "finished_at": "2026-05-20T04:02:46.336864+00:00"
+  },
+  "a521fa3a-f039-463b-b186-f332b4260014": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E01",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 496,
+      "nodes_total": 9409,
+      "high_conf": 42,
+      "low_conf": 244,
+      "unmatched": 1,
+      "failed": 0,
+      "clips_generated": 61,
+      "subtitle_fallback": 0
+    },
+    "error": null,
+    "created_at": "2026-05-20T04:35:01.970558+00:00",
+    "started_at": "2026-05-20T04:35:01.970558+00:00",
+    "finished_at": "2026-05-20T04:48:09.991959+00:00"
+  },
+  "ff07860b-fa2d-4e59-b4b0-cb36973adeb0": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E01",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 653,
+      "nodes_total": 71,
+      "high_conf": 30,
+      "low_conf": 36,
+      "unmatched": 5,
+      "failed": 0,
+      "clips_generated": 71,
+      "subtitle_fallback": 5
+    },
+    "error": null,
+    "created_at": "2026-05-20T06:49:28.490645+00:00",
+    "started_at": "2026-05-20T06:49:28.491921+00:00",
+    "finished_at": "2026-05-20T06:56:12.010702+00:00"
+  },
+  "581d6c19-b8d3-4308-b34d-48fc8134b570": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E01",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 653,
+      "nodes_total": 71,
+      "high_conf": 30,
+      "low_conf": 36,
+      "unmatched": 5,
+      "failed": 0,
+      "clips_generated": 71,
+      "subtitle_fallback": 5
+    },
+    "error": null,
+    "created_at": "2026-05-20T07:11:56.980108+00:00",
+    "started_at": "2026-05-20T07:11:56.980108+00:00",
+    "finished_at": "2026-05-20T07:15:13.841990+00:00"
+  },
+  "4260f250-5ca6-44a5-bd25-f878ed8a1479": {
+    "status": "done",
+    "description": "全量质量评估: 全库（9613 个在用节点，阈值 0.35）",
+    "result": {
+      "total": 9613,
+      "demoted": 2059,
+      "threshold": 0.35
+    },
+    "error": null,
+    "created_at": "2026-05-20T09:58:02.622626+00:00",
+    "started_at": "2026-05-20T09:58:02.622626+00:00",
+    "finished_at": "2026-05-20T09:58:12.382531+00:00"
+  },
+  "8d3425cf-1918-4502-89a1-6dd6d3306333": {
+    "status": "done",
+    "description": "全量质量评估: 全库（7554 个在用节点，阈值 0.4）",
+    "result": {
+      "total": 7554,
+      "demoted": 3369,
+      "threshold": 0.4
+    },
+    "error": null,
+    "created_at": "2026-05-20T10:03:34.217379+00:00",
+    "started_at": "2026-05-20T10:03:34.217379+00:00",
+    "finished_at": "2026-05-20T10:03:41.865267+00:00"
+  },
+  "f0039b56-f8f0-4c4d-8247-2e125455c83d": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E01",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 653,
+      "nodes_total": 145,
+      "high_conf": 61,
+      "low_conf": 72,
+      "unmatched": 8,
+      "failed": 0,
+      "clips_generated": 144,
+      "subtitle_fallback": 11
+    },
+    "error": null,
+    "created_at": "2026-05-20T10:12:14.850803+00:00",
+    "started_at": "2026-05-20T10:12:14.851804+00:00",
+    "finished_at": "2026-05-20T10:13:43.836443+00:00"
+  },
+  "7e4c03f2-c5e7-4449-ad3a-86254227f583": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E02",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E02",
+      "transcript_count": 538,
+      "nodes_total": 120,
+      "high_conf": 40,
+      "low_conf": 63,
+      "unmatched": 13,
+      "failed": 0,
+      "clips_generated": 120,
+      "subtitle_fallback": 17
+    },
+    "error": null,
+    "created_at": "2026-05-20T15:55:15.622702+00:00",
+    "started_at": "2026-05-20T15:55:15.623702+00:00",
+    "finished_at": "2026-05-20T15:59:05.978878+00:00"
+  },
+  "e834d486-b965-44ac-9b87-c113bcdbfa4c": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E03",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E03",
+      "transcript_count": 509,
+      "nodes_total": 124,
+      "high_conf": 59,
+      "low_conf": 57,
+      "unmatched": 7,
+      "failed": 0,
+      "clips_generated": 124,
+      "subtitle_fallback": 8
+    },
+    "error": null,
+    "created_at": "2026-05-20T15:55:39.884780+00:00",
+    "started_at": "2026-05-20T15:59:05.980871+00:00",
+    "finished_at": "2026-05-20T16:02:50.405638+00:00"
+  },
+  "8de6cb20-0b4d-47b6-9155-1a7d5126c6a5": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E04",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E04",
+      "transcript_count": 573,
+      "nodes_total": 107,
+      "high_conf": 36,
+      "low_conf": 56,
+      "unmatched": 8,
+      "failed": 1,
+      "clips_generated": 107,
+      "subtitle_fallback": 15
+    },
+    "error": null,
+    "created_at": "2026-05-20T15:57:32.729984+00:00",
+    "started_at": "2026-05-20T16:02:50.407638+00:00",
+    "finished_at": "2026-05-20T16:06:20.138013+00:00"
+  },
+  "cec2dddc-2620-4212-b3b6-d26eb0d5ddd2": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E06",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E06",
+      "transcript_count": 572,
+      "nodes_total": 116,
+      "high_conf": 41,
+      "low_conf": 60,
+      "unmatched": 6,
+      "failed": 0,
+      "clips_generated": 116,
+      "subtitle_fallback": 15
+    },
+    "error": null,
+    "created_at": "2026-05-20T15:58:07.078789+00:00",
+    "started_at": "2026-05-20T16:06:20.140013+00:00",
+    "finished_at": "2026-05-20T16:09:53.653469+00:00"
+  },
+  "b9567ec6-d640-47b1-85d0-9203c0362384": {
+    "status": "failed",
+    "description": "遏制气候变化 · 1个文件",
+    "result": null,
+    "error": {
+      "type": "AttributeError",
+      "message": "'list' object has no attribute 'astype'",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\tasks\\task_runner.py\", line 184, in _worker\n    result = await coro\n             ^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitles.py\", line 163, in _task\n    return await process_subtitle_batch(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\subtitle_pipeline.py\", line 431, in process_subtitle_batch\n    _ctx_scores = await _asyncio.get_running_loop().run_in_executor(\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\12040\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\quality_filter.py\", line 522, in compute_contextual_scores\n    novelty = _kb_novelty_scores(embeddings, faiss_index)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\quality_filter.py\", line 486, in _kb_novelty_scores\n    emb = embeddings.copy().astype(np.float32)\n          ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'astype'\n"
+    },
+    "created_at": "2026-05-21T03:34:52.103154+00:00",
+    "started_at": "2026-05-21T03:34:52.104153+00:00",
+    "finished_at": "2026-05-21T03:34:54.058799+00:00"
+  },
+  "a0db41fa-996d-4eea-b9dc-0682e288d8ed": {
+    "status": "failed",
+    "description": "遏制气候变化 · 1个文件",
+    "result": null,
+    "error": {
+      "type": "AttributeError",
+      "message": "'list' object has no attribute 'astype'",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\tasks\\task_runner.py\", line 184, in _worker\n    result = await coro\n             ^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitles.py\", line 163, in _task\n    return await process_subtitle_batch(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\subtitle_pipeline.py\", line 431, in process_subtitle_batch\n  File \"C:\\Users\\12040\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\quality_filter.py\", line 522, in compute_contextual_scores\n    novelty = _kb_novelty_scores(embeddings, faiss_index)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\quality_filter.py\", line 486, in _kb_novelty_scores\n    emb = embeddings.copy().astype(np.float32)\n          ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'astype'\n"
+    },
+    "created_at": "2026-05-21T03:49:22.083401+00:00",
+    "started_at": "2026-05-21T03:49:22.083401+00:00",
+    "finished_at": "2026-05-21T03:49:23.904457+00:00"
+  },
+  "21b1013c-9473-43ea-8c3f-62b9fc4b16e6": {
+    "status": "done",
+    "description": "遏制气候变化 · 1个文件",
+    "result": {
+      "total_files": 1,
+      "total_lines": 172,
+      "passed_lines": 117,
+      "new_nodes": 108,
+      "merged_nodes": 0,
+      "filter_rate": 0.31976744186046513,
+      "ai_tagging_success": 108,
+      "rule_fallback": 0,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-21T03:51:16.713335+00:00",
+    "started_at": "2026-05-21T03:51:16.714336+00:00",
+    "finished_at": "2026-05-21T03:51:39.877483+00:00"
+  },
+  "85041b0b-2091-47f7-b8cf-07b868a53273": {
+    "status": "done",
+    "description": "视频切片: 遏制气候变化 ",
+    "result": {
+      "show_name": "遏制气候变化",
+      "episode": "",
+      "transcript_count": 200,
+      "nodes_total": 108,
+      "high_conf": 52,
+      "low_conf": 33,
+      "unmatched": 6,
+      "failed": 3,
+      "clips_generated": 106,
+      "subtitle_fallback": 21
+    },
+    "error": null,
+    "created_at": "2026-05-21T03:53:03.358283+00:00",
+    "started_at": "2026-05-21T03:53:03.358283+00:00",
+    "finished_at": "2026-05-21T03:59:41.515251+00:00"
+  },
+  "533497f8-1ef1-4912-9329-fb8ce9725d59": {
+    "status": "done",
+    "description": "补填切片真实时长（ffprobe）",
+    "result": {
+      "total": 611,
+      "updated": 611,
+      "skipped": 0
+    },
+    "error": null,
+    "created_at": "2026-05-21T05:39:19.114708+00:00",
+    "started_at": "2026-05-21T05:39:19.114708+00:00",
+    "finished_at": "2026-05-21T05:42:30.833640+00:00"
+  },
+  "d3cad4ab-4997-4eeb-9878-e0b50b1dab9d": {
+    "status": "failed",
+    "description": "TED字幕获取: 学校扼杀了创造性？",
+    "result": null,
+    "error": {
+      "type": "ModuleNotFoundError",
+      "message": "No module named 'yt_dlp'",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\tasks\\task_runner.py\", line 184, in _worker\n    result = await coro\n             ^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitles.py\", line 491, in ted_fetch_task\n    title_en=title_en,\n       ^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\ted_fetcher.py\", line 166, in fetch_ted_subtitle\n    return await loop.run_in_executor(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\12040\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\ted_fetcher.py\", line 45, in _sync_fetch_and_write\n    from ted_subtitle_extractor import (\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\TED_ZIMU\\ted_subtitle_extractor.py\", line 28, in <module>\n    import yt_dlp\nModuleNotFoundError: No module named 'yt_dlp'\n"
+    },
+    "created_at": "2026-05-21T06:30:48.646742+00:00",
+    "started_at": "2026-05-21T06:30:48.647742+00:00",
+    "finished_at": "2026-05-21T06:30:48.937829+00:00"
+  },
+  "54738f21-77cb-48ea-b48e-b95d484aab91": {
+    "status": "failed",
+    "description": "TED字幕获取: 学校扼杀了创造性？",
+    "result": null,
+    "error": {
+      "type": "ModuleNotFoundError",
+      "message": "No module named 'yt_dlp'",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\tasks\\task_runner.py\", line 184, in _worker\n    result = await coro\n             ^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitles.py\", line 491, in ted_fetch_task\n    title_en=title_en,\n       ^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\ted_fetcher.py\", line 166, in fetch_ted_subtitle\n    return await loop.run_in_executor(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\12040\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\ted_fetcher.py\", line 45, in _sync_fetch_and_write\n    from ted_subtitle_extractor import (\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\TED_ZIMU\\ted_subtitle_extractor.py\", line 28, in <module>\n    import yt_dlp\nModuleNotFoundError: No module named 'yt_dlp'\n"
+    },
+    "created_at": "2026-05-21T06:31:49.314817+00:00",
+    "started_at": "2026-05-21T06:31:49.315814+00:00",
+    "finished_at": "2026-05-21T06:31:49.324756+00:00"
+  },
+  "2ae9b2c8-193a-4af8-9e17-f84cd1acd1dd": {
+    "status": "failed",
+    "description": "TED字幕获取: 学校扼杀了创造性？",
+    "result": null,
+    "error": {
+      "type": "ModuleNotFoundError",
+      "message": "No module named 'yt_dlp'",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\tasks\\task_runner.py\", line 184, in _worker\n    result = await coro\n             ^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitles.py\", line 489, in ted_fetch_task\n    return await _fetch_ted(\n           ^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\ted_fetcher.py\", line 166, in fetch_ted_subtitle\n    return await loop.run_in_executor(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\12040\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\ted_fetcher.py\", line 45, in _sync_fetch_and_write\n    from ted_subtitle_extractor import (\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\TED_ZIMU\\ted_subtitle_extractor.py\", line 28, in <module>\n    import yt_dlp\nModuleNotFoundError: No module named 'yt_dlp'\n"
+    },
+    "created_at": "2026-05-21T06:34:31.423036+00:00",
+    "started_at": "2026-05-21T06:34:31.424035+00:00",
+    "finished_at": "2026-05-21T06:34:31.654384+00:00"
+  },
+  "8a16a5f9-3748-4876-983f-ee49d2807aaa": {
+    "status": "done",
+    "description": "TED字幕获取: 学校杀死了创造性吗？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Do_school_kills_creativity__bilingual.srt",
+      "caption_count": 426,
+      "zh_source": "TED 官方 (zh-cn)",
+      "title_zh": "学校杀死了创造性吗？",
+      "title_en": "Do school kills creativity？"
+    },
+    "error": null,
+    "created_at": "2026-05-21T06:41:26.083701+00:00",
+    "started_at": "2026-05-21T06:41:26.083701+00:00",
+    "finished_at": "2026-05-21T06:42:22.729756+00:00"
+  },
+  "23b61b68-bde8-41d3-8504-91e2e7dee8bd": {
+    "status": "done",
+    "description": "TED字幕获取: 学校杀死了创造性吗？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Sir_Ken_Robinson__Do_Schools_Kill_Creativity_bilingual.srt",
+      "caption_count": 426,
+      "zh_source": "TED 官方 (zh-cn)",
+      "title_zh": "学校杀死了创造性吗？",
+      "title_en": "Sir Ken Robinson ：Do Schools Kill Creativity"
+    },
+    "error": null,
+    "created_at": "2026-05-21T06:49:58.417086+00:00",
+    "started_at": "2026-05-21T06:49:58.418081+00:00",
+    "finished_at": "2026-05-21T06:50:36.867394+00:00"
+  },
+  "c8347313-5706-4cb3-888c-836db05e2358": {
+    "status": "done",
+    "description": "TED字幕获取: 学校杀死了创造性吗？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Sir_Ken_Robinson_Do_Schools_Kill_Creativity_bilingual.srt",
+      "caption_count": 426,
+      "zh_source": "TED 官方 (zh-cn)",
+      "title_zh": "学校杀死了创造性吗？",
+      "title_en": "Sir Ken Robinson Do Schools Kill Creativity"
+    },
+    "error": null,
+    "created_at": "2026-05-21T07:09:45.690049+00:00",
+    "started_at": "2026-05-21T07:09:45.691048+00:00",
+    "finished_at": "2026-05-21T07:10:35.510229+00:00"
+  },
+  "2895545a-7804-443b-bab3-c4be6ace9d0e": {
+    "status": "failed",
+    "description": "TED字幕入库: 学校杀死了创造性吗？",
+    "result": null,
+    "error": {
+      "type": "AttributeError",
+      "message": "'list' object has no attribute 'get'",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\tasks\\task_runner.py\", line 184, in _worker\n    result = await coro\n             ^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitles.py\", line 579, in pipeline_task\n    sync_stats = await sync_episode_to_knowledge(\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\subtitle_pipeline.py\", line 811, in sync_episode_to_knowledge\n    if t.get(\"tag_source\") == \"ai\":\n       ^^^^^\nAttributeError: 'list' object has no attribute 'get'\n"
+    },
+    "created_at": "2026-05-21T07:12:18.694103+00:00",
+    "started_at": "2026-05-21T07:12:18.695102+00:00",
+    "finished_at": "2026-05-21T07:13:11.685365+00:00"
+  },
+  "ba224cfd-0d00-4a2c-bbb2-c3cc7098a8e0": {
+    "status": "done",
+    "description": "TED字幕获取: 学校杀死了创造性吗？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Sir_Ken_Robinson_Do_Schools_Kill_Creativity_bilingual.srt",
+      "caption_count": 426,
+      "zh_source": "TED 官方 (zh-cn)",
+      "title_zh": "学校杀死了创造性吗？",
+      "title_en": "Sir Ken Robinson Do Schools Kill Creativity"
+    },
+    "error": null,
+    "created_at": "2026-05-21T07:22:50.849025+00:00",
+    "started_at": "2026-05-21T07:22:50.850031+00:00",
+    "finished_at": "2026-05-21T07:23:42.849698+00:00"
+  },
+  "7f3cbb7a-a9fe-4771-9f01-56f1cde1796c": {
+    "status": "done",
+    "description": "TED字幕入库: 学校杀死了创造性吗？",
+    "result": {
+      "total": 0,
+      "passed": 0,
+      "filter_rate": 1.0,
+      "rejected_by_stage": {
+        "rejected_blacklist": 0,
+        "rejected_wordcount": 0,
+        "rejected_quality": 0
+      },
+      "skipped": true,
+      "error": null
+    },
+    "error": null,
+    "created_at": "2026-05-21T07:24:08.636762+00:00",
+    "started_at": "2026-05-21T07:24:08.637777+00:00",
+    "finished_at": "2026-05-21T07:24:08.671657+00:00"
+  },
+  "932d7d38-a6a2-46a4-9c3d-076b154200a2": {
+    "status": "done",
+    "description": "TED字幕获取: 学校杀死了创造性吗？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Sir_Ken_Robinson_Do_Schools_Kill_Creativity_bilingual.srt",
+      "caption_count": 426,
+      "zh_source": "TED 官方 (zh-cn)",
+      "title_zh": "学校杀死了创造性吗？",
+      "title_en": "Sir Ken Robinson Do Schools Kill Creativity"
+    },
+    "error": null,
+    "created_at": "2026-05-21T07:35:11.258755+00:00",
+    "started_at": "2026-05-21T07:35:11.259758+00:00",
+    "finished_at": "2026-05-21T07:36:01.304373+00:00"
+  },
+  "9da6e1fa-5070-4d84-926a-2577fdff3dd5": {
+    "status": "done",
+    "description": "TED字幕入库: 学校杀死了创造性吗？",
+    "result": {
+      "total": 0,
+      "passed": 0,
+      "filter_rate": 1.0,
+      "rejected_by_stage": {
+        "rejected_blacklist": 0,
+        "rejected_wordcount": 0,
+        "rejected_quality": 0
+      },
+      "skipped": true,
+      "error": null,
+      "knowledge_sync": {
+        "new_nodes": 0,
+        "merged_nodes": 2,
+        "ai_tagging_success": 0,
+        "rule_fallback": 1
+      }
+    },
+    "error": null,
+    "created_at": "2026-05-21T07:36:07.493361+00:00",
+    "started_at": "2026-05-21T07:36:07.493361+00:00",
+    "finished_at": "2026-05-21T07:36:11.940759+00:00"
+  },
+  "45d4fd35-4a48-451c-a12d-4ee2677fd655": {
+    "status": "done",
+    "description": "TED字幕获取: 怎么说话别人才原因听？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Julian_Treasure_How_To_Speak_So_That_People_Want_T_bilingual.srt",
+      "caption_count": 229,
+      "zh_source": "TED 官方 (zh-cn)",
+      "title_zh": "怎么说话别人才原因听？",
+      "title_en": "Julian Treasure How To Speak So That People Want To Listen"
+    },
+    "error": null,
+    "created_at": "2026-05-21T07:37:57.428526+00:00",
+    "started_at": "2026-05-21T07:37:57.429522+00:00",
+    "finished_at": "2026-05-21T07:38:29.003506+00:00"
+  },
+  "0548f69c-c132-4e92-b697-234e2a501042": {
+    "status": "done",
+    "description": "TED字幕入库: 怎么说话别人才原因听？",
+    "result": {
+      "total": 151,
+      "passed": 107,
+      "filter_rate": 0.29139072847682124,
+      "rejected_by_stage": {
+        "rejected_blacklist": 1,
+        "rejected_wordcount": 9,
+        "rejected_quality": 34
+      },
+      "skipped": false,
+      "error": null,
+      "knowledge_sync": {
+        "new_nodes": 107,
+        "merged_nodes": 0,
+        "ai_tagging_success": 0,
+        "rule_fallback": 107
+      }
+    },
+    "error": null,
+    "created_at": "2026-05-21T07:40:33.277946+00:00",
+    "started_at": "2026-05-21T07:40:33.277946+00:00",
+    "finished_at": "2026-05-21T07:41:09.861050+00:00"
+  },
+  "bcc3b04d-4e48-4128-9565-5afc0a366da2": {
+    "status": "done",
+    "description": "TED字幕获取: 人类为什么要拥抱ai？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\D_Scott_Phoenix_Why_Humans_Should_Merge_With_Ai_bilingual.srt",
+      "caption_count": 222,
+      "zh_source": "DeepSeek 翻译（系统配置）",
+      "title_zh": "人类为什么要拥抱ai？",
+      "title_en": "D Scott Phoenix Why Humans Should Merge With Ai"
+    },
+    "error": null,
+    "created_at": "2026-05-22T01:25:32.836310+00:00",
+    "started_at": "2026-05-22T01:25:32.836310+00:00",
+    "finished_at": "2026-05-22T01:27:15.377230+00:00"
+  },
+  "920c199e-9288-4efc-9806-44e95788d0ff": {
+    "status": "done",
+    "description": "TED字幕入库: 人类为什么要拥抱ai？",
+    "result": {
+      "total": 142,
+      "passed": 111,
+      "filter_rate": 0.21830985915492962,
+      "rejected_by_stage": {
+        "rejected_blacklist": 2,
+        "rejected_wordcount": 4,
+        "rejected_quality": 25
+      },
+      "skipped": false,
+      "error": null,
+      "new_nodes": 111,
+      "merged_nodes": 0,
+      "ai_tagging_success": 0,
+      "rule_fallback": 111,
+      "knowledge_sync": {
+        "new_nodes": 111,
+        "merged_nodes": 0,
+        "ai_tagging_success": 0,
+        "rule_fallback": 111
+      }
+    },
+    "error": null,
+    "created_at": "2026-05-22T01:37:10.046719+00:00",
+    "started_at": "2026-05-22T01:37:10.048105+00:00",
+    "finished_at": "2026-05-22T01:37:42.797694+00:00"
+  },
+  "d2a94460-f9f8-4fe6-8039-252f82c2b3f9": {
+    "status": "done",
+    "description": "TED字幕获取: 没有机器人的日子",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Emily_Kate_Genatowski_My_Year_Living_With_A_Robot_bilingual.srt",
+      "caption_count": 302,
+      "zh_source": "TED 官方 (zh-tw)",
+      "title_zh": "没有机器人的日子",
+      "title_en": "Emily Kate Genatowski My Year Living With A Robot"
+    },
+    "error": null,
+    "created_at": "2026-05-22T02:41:30.533836+00:00",
+    "started_at": "2026-05-22T02:41:30.536837+00:00",
+    "finished_at": "2026-05-22T02:42:15.097005+00:00"
+  },
+  "ebf0d418-6e31-4309-a109-74518e1d948d": {
+    "status": "done",
+    "description": "TED字幕获取: 没有机器人的日子",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Emily_Kate_Genatowski_My_Year_Living_With_A_Robot_bilingual.srt",
+      "caption_count": 302,
+      "zh_source": "TED 官方 (zh-tw)",
+      "title_zh": "没有机器人的日子",
+      "title_en": "Emily Kate Genatowski My Year Living With A Robot"
+    },
+    "error": null,
+    "created_at": "2026-05-22T02:58:04.879530+00:00",
+    "started_at": "2026-05-22T02:58:04.881532+00:00",
+    "finished_at": "2026-05-22T02:58:33.221016+00:00"
+  },
+  "9beb6841-6ecf-438c-9015-f827c62a6677": {
+    "status": "done",
+    "description": "TED字幕获取: 没有机器人的日子",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Emily_Kate_Genatowski_My_Year_Living_With_A_Robot_bilingual.srt",
+      "caption_count": 302,
+      "zh_source": "TED 官方 (zh-tw)",
+      "title_zh": "没有机器人的日子",
+      "title_en": "Emily Kate Genatowski My Year Living With A Robot"
+    },
+    "error": null,
+    "created_at": "2026-05-22T03:02:21.133903+00:00",
+    "started_at": "2026-05-22T03:02:21.136050+00:00",
+    "finished_at": "2026-05-22T03:02:48.778776+00:00"
+  },
+  "2939956d-508f-4d79-8a46-1f5534f4e54c": {
+    "status": "done",
+    "description": "TED字幕获取: 我是如何解放自我的",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Keke_Palmer__How_I_Set_Myself_Free_bilingual.srt",
+      "caption_count": 246,
+      "zh_source": "DeepSeek 翻译润色（简体）",
+      "title_zh": "我是如何解放自我的",
+      "title_en": "Keke Palmer ：How I Set Myself Free"
+    },
+    "error": null,
+    "created_at": "2026-05-22T06:31:20.979862+00:00",
+    "started_at": "2026-05-22T06:31:20.980860+00:00",
+    "finished_at": "2026-05-22T06:32:44.772510+00:00"
+  },
+  "154db2b4-4f41-48c0-8776-2d5fe4a70878": {
+    "status": "done",
+    "description": "TED字幕入库: 我是如何解放自我的",
+    "result": {
+      "total": 159,
+      "passed": 112,
+      "filter_rate": 0.2955974842767296,
+      "rejected_by_stage": {
+        "rejected_blacklist": 2,
+        "rejected_wordcount": 12,
+        "rejected_quality": 33
+      },
+      "skipped": false,
+      "error": null,
+      "new_nodes": 110,
+      "merged_nodes": 2,
+      "ai_tagging_success": 0,
+      "rule_fallback": 112,
+      "knowledge_sync": {
+        "new_nodes": 110,
+        "merged_nodes": 2,
+        "ai_tagging_success": 0,
+        "rule_fallback": 112
+      }
+    },
+    "error": null,
+    "created_at": "2026-05-22T06:37:52.560209+00:00",
+    "started_at": "2026-05-22T06:37:52.560209+00:00",
+    "finished_at": "2026-05-22T06:38:26.518820+00:00"
+  },
+  "4edcf769-874b-4f76-946e-ba8c79aea16e": {
+    "status": "done",
+    "description": "TED字幕获取: 我是如何解放自我的",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Keke_Palmer_How_I_Set_Myself_Free_bilingual.srt",
+      "caption_count": 246,
+      "zh_source": "DeepSeek 翻译润色（简体）",
+      "title_zh": "我是如何解放自我的",
+      "title_en": "Keke Palmer How I Set Myself Free"
+    },
+    "error": null,
+    "created_at": "2026-05-22T07:54:02.034344+00:00",
+    "started_at": "2026-05-22T07:54:02.035804+00:00",
+    "finished_at": "2026-05-22T07:55:32.750767+00:00"
+  },
+  "6da4276b-0173-458c-9d0a-b34d24c7ee7a": {
+    "status": "failed",
+    "description": "TED字幕入库: 我是如何解放自我的",
+    "result": null,
+    "error": {
+      "type": "UnboundLocalError",
+      "message": "cannot access local variable 'new_node_ids' where it is not associated with a value",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\tasks\\task_runner.py\", line 184, in _worker\n    result = await coro\n             ^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitle_jobs.py\", line 335, in _task\n    return await _pipeline_and_update(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\routers\\subtitle_jobs.py\", line 105, in _pipeline_and_update\n    sync_stats = await sync_episode_to_knowledge(\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\services\\subtitle_pipeline.py\", line 933, in sync_episode_to_knowledge\n    if new_node_ids:\n       ^^^^^^^^^^^^\nUnboundLocalError: cannot access local variable 'new_node_ids' where it is not associated with a value\n"
+    },
+    "created_at": "2026-05-22T14:58:27.545955+00:00",
+    "started_at": "2026-05-22T14:58:27.546962+00:00",
+    "finished_at": "2026-05-22T14:58:28.240311+00:00"
+  },
+  "0b8f45f8-d40a-4c26-a2e2-69218af60132": {
+    "status": "done",
+    "description": "我是如何拯救自我的 · 1个文件",
+    "result": {
+      "total_files": 1,
+      "total_lines": 159,
+      "passed_lines": 112,
+      "new_nodes": 107,
+      "merged_nodes": 2,
+      "filter_rate": 0.2955974842767296,
+      "ai_tagging_success": 107,
+      "rule_fallback": 0,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-22T15:05:03.271094+00:00",
+    "started_at": "2026-05-22T15:05:03.272101+00:00",
+    "finished_at": "2026-05-22T15:05:37.316931+00:00"
+  },
+  "d64353c4-c43b-43c0-8196-2ad09f9e9472": {
+    "status": "done",
+    "description": "视频切片: 我是如何拯救自我的 ",
+    "result": {
+      "show_name": "我是如何拯救自我的",
+      "episode": "",
+      "transcript_count": 198,
+      "nodes_total": 107,
+      "high_conf": 59,
+      "low_conf": 34,
+      "unmatched": 4,
+      "failed": 1,
+      "clips_generated": 107,
+      "subtitle_fallback": 14
+    },
+    "error": null,
+    "created_at": "2026-05-22T15:07:45.425181+00:00",
+    "started_at": "2026-05-22T15:07:45.426184+00:00",
+    "finished_at": "2026-05-22T15:09:56.344126+00:00"
+  },
+  "94bd96fb-3037-4664-9ed7-f0872984d3af": {
+    "status": "done",
+    "description": "Ken Robinson TED",
+    "result": {
+      "total": 313,
+      "passed": 191,
+      "filter_rate": 0.389776357827476,
+      "rejected_by_stage": {
+        "rejected_blacklist": 4,
+        "rejected_wordcount": 44,
+        "rejected_quality": 74
+      },
+      "skipped": false,
+      "error": null
+    },
+    "error": null,
+    "created_at": "2026-05-24T09:04:31.014984+00:00",
+    "started_at": "2026-05-24T09:04:31.015982+00:00",
+    "finished_at": "2026-05-24T09:04:31.446945+00:00"
+  },
+  "809a3cad-3243-40e7-b5b3-c3857e5eca32": {
+    "status": "done",
+    "description": "同步 passed 字幕到知识库: 全部剧名 (191 条)",
+    "result": {
+      "created": 191,
+      "merged": 0,
+      "total": 191
+    },
+    "error": null,
+    "created_at": "2026-05-24T09:10:12.005657+00:00",
+    "started_at": "2026-05-24T09:10:12.006657+00:00",
+    "finished_at": "2026-05-24T09:10:14.267092+00:00"
+  },
+  "e07a32b7-455e-43cd-ba2f-86ac3f32ff1d": {
+    "status": "done",
+    "description": "批量重新打标: 规则打标·全库 (191 条)",
+    "result": {
+      "total": 191,
+      "ai_tagged": 0,
+      "rule_fallback": 191
+    },
+    "error": null,
+    "created_at": "2026-05-24T09:10:40.398929+00:00",
+    "started_at": "2026-05-24T09:10:40.399929+00:00",
+    "finished_at": "2026-05-24T09:12:09.491832+00:00"
+  },
+  "d8088e16-a100-4b6e-8e7e-0344c8d27b4c": {
+    "status": "done",
+    "description": "zh_embedding 回填（191 个节点）",
+    "result": {
+      "filled": 191,
+      "zh_index_size": 191
+    },
+    "error": null,
+    "created_at": "2026-05-24T09:12:27.206269+00:00",
+    "started_at": "2026-05-24T09:12:27.207269+00:00",
+    "finished_at": "2026-05-24T09:12:29.113300+00:00"
+  },
+  "c368354b-bf48-48d4-96dc-2a193bbffa96": {
+    "status": "done",
+    "description": "好领导讲故事 TED",
+    "result": {
+      "total": 148,
+      "passed": 105,
+      "filter_rate": 0.29054054054054057,
+      "rejected_by_stage": {
+        "rejected_blacklist": 1,
+        "rejected_wordcount": 2,
+        "rejected_quality": 40
+      },
+      "skipped": false,
+      "error": null,
+      "new_nodes": 105,
+      "merged_nodes": 0,
+      "ai_tagging_success": 0,
+      "rule_fallback": 105,
+      "knowledge_sync": {
+        "new_nodes": 105,
+        "merged_nodes": 0,
+        "ai_tagging_success": 0,
+        "rule_fallback": 105
+      }
+    },
+    "error": null,
+    "created_at": "2026-05-24T09:16:24.647415+00:00",
+    "started_at": "2026-05-24T09:16:24.648417+00:00",
+    "finished_at": "2026-05-24T09:16:56.688932+00:00"
+  },
+  "a6ae8c43-6d53-42f9-80c5-2514d00b83f2": {
+    "status": "done",
+    "description": "领导故事TED",
+    "result": {
+      "total": 148,
+      "passed": 105,
+      "filter_rate": 0.29054054054054057,
+      "rejected_by_stage": {
+        "rejected_blacklist": 1,
+        "rejected_wordcount": 2,
+        "rejected_quality": 40
+      },
+      "skipped": false,
+      "error": null,
+      "new_nodes": 105,
+      "merged_nodes": 0,
+      "ai_tagging_success": 0,
+      "rule_fallback": 105,
+      "knowledge_sync": {
+        "new_nodes": 105,
+        "merged_nodes": 0,
+        "ai_tagging_success": 0,
+        "rule_fallback": 105
+      }
+    },
+    "error": null,
+    "created_at": "2026-05-25T02:00:17.787361+00:00",
+    "started_at": "2026-05-25T02:00:17.788556+00:00",
+    "finished_at": "2026-05-25T02:00:40.696031+00:00"
+  },
+  "800e0c34-889f-4f86-81e4-e9c70c58ab04": {
+    "status": "done",
+    "description": "视频转写: 领导故事TED ",
+    "result": {
+      "show_name": "领导故事TED",
+      "episode": "",
+      "transcript_count": 228,
+      "video_path": "E:\\dramalingo-files\\media\\领导故事TED_\\video.mp4"
+    },
+    "error": null,
+    "created_at": "2026-05-25T02:38:08.832977+00:00",
+    "started_at": "2026-05-25T02:38:08.833982+00:00",
+    "finished_at": "2026-05-25T02:39:29.369282+00:00"
+  },
+  "511c8c1a-cc52-4943-b3cf-e145cf3c37e4": {
+    "status": "done",
+    "description": "重置重跑: 领导故事TED ",
+    "result": {
+      "show_name": "领导故事TED",
+      "episode": "",
+      "transcript_count": 228,
+      "nodes_total": 105,
+      "high_conf": 62,
+      "low_conf": 32,
+      "unmatched": 4,
+      "failed": 0,
+      "clips_generated": 105,
+      "subtitle_fallback": 11
+    },
+    "error": null,
+    "created_at": "2026-05-25T02:47:57.796940+00:00",
+    "started_at": "2026-05-25T02:47:57.796940+00:00",
+    "finished_at": "2026-05-25T02:54:00.168535+00:00"
+  },
+  "975afaef-3b3c-4eab-90bb-90fd419b0dda": {
+    "status": "done",
+    "description": "我是如何实现自我救赎的 · 1个文件",
+    "result": {
+      "total_files": 1,
+      "total_lines": 159,
+      "passed_lines": 106,
+      "new_nodes": 103,
+      "merged_nodes": 2,
+      "filter_rate": 0.33333333333333337,
+      "ai_tagging_success": 103,
+      "rule_fallback": 0,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-25T03:22:22.099288+00:00",
+    "started_at": "2026-05-25T03:22:22.099288+00:00",
+    "finished_at": "2026-05-25T03:22:54.638957+00:00"
+  },
+  "4187826e-a574-4d90-a0eb-882062d7060f": {
+    "status": "done",
+    "description": "TED字幕获取: 为什么成功不等于快乐？",
+    "result": {
+      "srt_path": "E:\\dramalingo-files\\uploads\\ted_srt\\Laura_Gassner_Otting_Why_Doesn_T_Success_Bring_Hap_bilingual.srt",
+      "caption_count": 200,
+      "zh_source": "DeepSeek 翻译润色（简体）",
+      "title_zh": "为什么成功不等于快乐？",
+      "title_en": "Laura Gassner Otting Why Doesn T Success Bring Happiness"
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:40:48.794968+00:00",
+    "started_at": "2026-05-25T10:40:48.795973+00:00",
+    "finished_at": "2026-05-25T10:41:47.097612+00:00"
+  },
+  "fc4ca8c4-d5a7-4905-8d76-b7eb2823dd3c": {
+    "status": "done",
+    "description": "老友记 · S01E01 / S01E02 / S01E03",
+    "result": {
+      "total_files": 3,
+      "total_lines": 970,
+      "passed_lines": 741,
+      "new_nodes": 738,
+      "merged_nodes": 2,
+      "filter_rate": 0.23608247422680417,
+      "ai_tagging_success": 718,
+      "rule_fallback": 20,
+      "skipped_files": 0,
+      "errors": []
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:41:43.808825+00:00",
+    "started_at": "2026-05-25T10:41:47.101607+00:00",
+    "finished_at": "2026-05-25T10:44:58.042724+00:00"
+  },
+  "04f9be6f-eac3-4954-b446-edd62edd4835": {
+    "status": "done",
+    "description": "TED字幕入库: 为什么成功不等于快乐？",
+    "result": {
+      "total": 125,
+      "passed": 69,
+      "filter_rate": 0.44799999999999995,
+      "rejected_by_stage": {
+        "rejected_blacklist": 8,
+        "rejected_wordcount": 0,
+        "rejected_quality": 48
+      },
+      "skipped": false,
+      "error": null,
+      "new_nodes": 69,
+      "merged_nodes": 0,
+      "ai_tagging_success": 0,
+      "rule_fallback": 69,
+      "knowledge_sync": {
+        "new_nodes": 69,
+        "merged_nodes": 0,
+        "ai_tagging_success": 0,
+        "rule_fallback": 69
+      }
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:48:18.284543+00:00",
+    "started_at": "2026-05-25T10:48:18.285544+00:00",
+    "finished_at": "2026-05-25T10:48:40.127773+00:00"
+  },
+  "84b94638-d682-4a5c-8741-953973cf3913": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 9,
+      "analyzed_at": "2026-05-25T10:51:19.138814+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 3,
+          "ratio": 0.3333,
+          "avg_quality_score": 0.55,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "I'm Liza Minnelli.. …我是Liza Minelli-"
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 2,
+          "ratio": 0.2222,
+          "avg_quality_score": 0.4887,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.2222,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.1111,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.1111,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 6,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 3
+        },
+        "mean": 0.4505,
+        "median": 0.36,
+        "stdev": 0.15
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (22.2%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (22.2%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 3 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:51:16.116214+00:00",
+    "started_at": "2026-05-25T10:51:16.117210+00:00",
+    "finished_at": "2026-05-25T10:51:19.140813+00:00"
+  },
+  "50df3ddd-1729-4f99-ada7-6a2b70537a28": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 11,
+      "analyzed_at": "2026-05-25T10:51:22.820663+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 5,
+          "ratio": 0.4545,
+          "avg_quality_score": 0.52,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "Go ahead. Thank you."
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 2,
+          "ratio": 0.1818,
+          "avg_quality_score": 0.4887,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1818,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0909,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0909,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 7,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 4
+        },
+        "mean": 0.455,
+        "median": 0.36,
+        "stdev": 0.1457
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (18.2%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (18.2%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 5 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:51:19.800795+00:00",
+    "started_at": "2026-05-25T10:51:19.801795+00:00",
+    "finished_at": "2026-05-25T10:51:22.822663+00:00"
+  },
+  "ab6750df-b88f-4892-b7c8-dfb25a23030d": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 11,
+      "analyzed_at": "2026-05-25T10:51:25.853727+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 5,
+          "ratio": 0.4545,
+          "avg_quality_score": 0.52,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "Go ahead. Thank you."
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 2,
+          "ratio": 0.1818,
+          "avg_quality_score": 0.4887,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1818,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0909,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0909,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 7,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 4
+        },
+        "mean": 0.455,
+        "median": 0.36,
+        "stdev": 0.1457
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (18.2%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (18.2%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 5 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:51:22.474613+00:00",
+    "started_at": "2026-05-25T10:51:22.828664+00:00",
+    "finished_at": "2026-05-25T10:51:25.856730+00:00"
+  },
+  "3a5eeef6-4b24-4f33-8552-a0078a5e2f74": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 12,
+      "analyzed_at": "2026-05-25T10:51:29.311716+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 5,
+          "ratio": 0.4167,
+          "avg_quality_score": 0.52,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "Go ahead. Thank you."
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 3,
+          "ratio": 0.25,
+          "avg_quality_score": 0.5424,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer.",
+            "I'm in Las Vegas."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1667,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0833,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0833,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 7,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 5
+        },
+        "mean": 0.4712,
+        "median": 0.3637,
+        "stdev": 0.1499
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (16.7%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 3 条 (25.0%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 5 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:51:26.292351+00:00",
+    "started_at": "2026-05-25T10:51:26.292351+00:00",
+    "finished_at": "2026-05-25T10:51:29.314741+00:00"
+  },
+  "8bca7f4c-2095-432a-b8ce-117c5e0cca1e": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 13,
+      "analyzed_at": "2026-05-25T10:51:37.792767+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 6,
+          "ratio": 0.4615,
+          "avg_quality_score": 0.4983,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "Miss,more coffee?"
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 3,
+          "ratio": 0.2308,
+          "avg_quality_score": 0.5424,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer.",
+            "I'm in Las Vegas."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1538,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0769,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0769,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 8,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 5
+        },
+        "mean": 0.465,
+        "median": 0.3673,
+        "stdev": 0.1453
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (15.4%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 3 条 (23.1%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 6 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:51:34.772082+00:00",
+    "started_at": "2026-05-25T10:51:34.773082+00:00",
+    "finished_at": "2026-05-25T10:51:37.795786+00:00"
+  },
+  "49b45ec6-679e-46de-9384-be1088af3d23": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 14,
+      "analyzed_at": "2026-05-25T10:52:05.369094+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 7,
+          "ratio": 0.5,
+          "avg_quality_score": 0.5257,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "Wait,wait. What's with you?"
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 3,
+          "ratio": 0.2143,
+          "avg_quality_score": 0.5424,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer.",
+            "I'm in Las Vegas."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1429,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0714,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0714,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 8,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 6
+        },
+        "mean": 0.481,
+        "median": 0.3787,
+        "stdev": 0.152
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (14.3%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 3 条 (21.4%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 7 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:52:02.345768+00:00",
+    "started_at": "2026-05-25T10:52:02.345768+00:00",
+    "finished_at": "2026-05-25T10:52:05.372095+00:00"
+  },
+  "cefb410c-d29c-4f14-9eed-65ce192905d8": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 15,
+      "analyzed_at": "2026-05-25T10:52:28.422056+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 8,
+          "ratio": 0.5333,
+          "avg_quality_score": 0.5038,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "- Good night. - Good night."
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 3,
+          "ratio": 0.2,
+          "avg_quality_score": 0.5424,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer.",
+            "I'm in Las Vegas."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1333,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0667,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0667,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 9,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 6
+        },
+        "mean": 0.4723,
+        "median": 0.3673,
+        "stdev": 0.1503
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (13.3%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 3 条 (20.0%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 8 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:52:25.411583+00:00",
+    "started_at": "2026-05-25T10:52:25.411583+00:00",
+    "finished_at": "2026-05-25T10:52:28.426064+00:00"
+  },
+  "14f2b3e7-c18b-445f-b4bf-6e1e45a6ea9b": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 16,
+      "analyzed_at": "2026-05-25T10:52:34.524038+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 8,
+          "ratio": 0.5,
+          "avg_quality_score": 0.5038,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "- Good night. - Good night."
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 3,
+          "ratio": 0.1875,
+          "avg_quality_score": 0.5424,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer.",
+            "I'm in Las Vegas."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.125,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0625,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0625,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        },
+        "low_authenticity": {
+          "count": 1,
+          "ratio": 0.0625,
+          "avg_quality_score": 0.3273,
+          "description": "口语真实性评分过低，但未命中具体规则（缩略语/词汇密度/短语动词均不足）",
+          "filter_stage": "G4（质量评分）",
+          "already_fixed": false,
+          "examples": [
+            "Okay,maybe I will."
+          ],
+          "suggestion": "检查是否为非英语内容、代码片段或模板语言，可补充到格式垃圾正则"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 10,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 6
+        },
+        "mean": 0.4632,
+        "median": 0.3637,
+        "stdev": 0.1497
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (12.5%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 3 条 (18.8%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 8 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:52:31.506180+00:00",
+    "started_at": "2026-05-25T10:52:31.507182+00:00",
+    "finished_at": "2026-05-25T10:52:34.526048+00:00"
+  },
+  "fc32dbb2-ca23-46f6-ad81-4a126a55ab0e": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 17,
+      "analyzed_at": "2026-05-25T10:52:39.514080+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 9,
+          "ratio": 0.5294,
+          "avg_quality_score": 0.4886,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "Listen,do you think..?"
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 3,
+          "ratio": 0.1765,
+          "avg_quality_score": 0.5424,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer.",
+            "I'm in Las Vegas."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1176,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0588,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0588,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        },
+        "low_authenticity": {
+          "count": 1,
+          "ratio": 0.0588,
+          "avg_quality_score": 0.3273,
+          "description": "口语真实性评分过低，但未命中具体规则（缩略语/词汇密度/短语动词均不足）",
+          "filter_stage": "G4（质量评分）",
+          "already_fixed": false,
+          "examples": [
+            "Okay,maybe I will."
+          ],
+          "suggestion": "检查是否为非英语内容、代码片段或模板语言，可补充到格式垃圾正则"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 11,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 6
+        },
+        "mean": 0.4576,
+        "median": 0.3673,
+        "stdev": 0.1468
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (11.8%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 3 条 (17.6%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 9 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:52:36.487714+00:00",
+    "started_at": "2026-05-25T10:52:36.487714+00:00",
+    "finished_at": "2026-05-25T10:52:39.517097+00:00"
+  },
+  "aa1d0831-6c24-4dcb-be38-37e4a389ba8c": {
+    "status": "done",
+    "description": "弃用知识节点模式分析",
+    "result": {
+      "total_deprecated": 18,
+      "analyzed_at": "2026-05-25T10:52:48.047025+00:00",
+      "patterns": {
+        "unclassified": {
+          "count": 10,
+          "ratio": 0.5556,
+          "avg_quality_score": 0.4747,
+          "description": "未命中任何已知规则，需人工复审",
+          "filter_stage": "—",
+          "already_fixed": false,
+          "examples": [
+            "And listen, he's really good.",
+            "Like, he commits.",
+            "Oh,boy! All right."
+          ],
+          "suggestion": "积累足够样本后归纳新规则类型"
+        },
+        "self_introduction": {
+          "count": 3,
+          "ratio": 0.1667,
+          "avg_quality_score": 0.5424,
+          "description": "演讲者/角色自我介绍，姓名绑定导致不可复用（如 I'm Keke Palmer.）",
+          "filter_stage": "G2（黑名单）",
+          "already_fixed": true,
+          "examples": [
+            "I'm Keke Palmer.",
+            "I was Keke Palmer.",
+            "I'm in Las Vegas."
+          ],
+          "suggestion": "已在第二道黑名单过滤中添加 _SELF_INTRO_RE，可扩展 'My name is' 变体"
+        },
+        "stage_direction": {
+          "count": 2,
+          "ratio": 0.1111,
+          "avg_quality_score": 0.35,
+          "description": "括号/方括号舞台指示或音效符号，非真实台词（如 (Cheers and applause)）",
+          "filter_stage": "G1（基础格式）",
+          "already_fixed": true,
+          "examples": [
+            "(Applause and cheers)",
+            "(Cheers and applause)"
+          ],
+          "suggestion": "已在第一道基础过滤中添加 _PAREN_STAGE_RE，可新增常见观众反应词到黑名单"
+        },
+        "trailing_truncation": {
+          "count": 1,
+          "ratio": 0.0556,
+          "avg_quality_score": 0.3673,
+          "description": "句末省略号或悬挂逗号，句子被截断（如 ...going back to how we were living be...）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "And sure, when I was younger, she'd say,"
+          ],
+          "suggestion": "L2 P1 惩罚 -0.30 已覆盖，若该模式占比高可考虑升级为直接拒绝"
+        },
+        "dependency_preposition": {
+          "count": 1,
+          "ratio": 0.0556,
+          "avg_quality_score": 0.36,
+          "description": "依存性介词/副词起头，预设上文情境（如 alongside / on top of that）",
+          "filter_stage": "L2（语用因子）",
+          "already_fixed": true,
+          "examples": [
+            "alongside going back to how we were living before."
+          ],
+          "suggestion": "L2 P5 惩罚 -0.15 已添加（本次新增）"
+        },
+        "low_authenticity": {
+          "count": 1,
+          "ratio": 0.0556,
+          "avg_quality_score": 0.3273,
+          "description": "口语真实性评分过低，但未命中具体规则（缩略语/词汇密度/短语动词均不足）",
+          "filter_stage": "G4（质量评分）",
+          "already_fixed": false,
+          "examples": [
+            "Okay,maybe I will."
+          ],
+          "suggestion": "检查是否为非英语内容、代码片段或模板语言，可补充到格式垃圾正则"
+        }
+      },
+      "score_distribution": {
+        "buckets": {
+          "0.0-0.3": 0,
+          "0.3-0.4": 12,
+          "0.4-0.5": 0,
+          "0.5-0.6": 0,
+          "0.6+": 6
+        },
+        "mean": 0.4516,
+        "median": 0.3637,
+        "stdev": 0.1446
+      },
+      "filter_recommendations": [
+        {
+          "signal": "stage_direction",
+          "action": "将括号舞台指示直接归入 rejected_blacklist（已通过 _PAREN_STAGE_RE 实现）",
+          "confidence": "high",
+          "impact": "可拦截 2 条 (11.1%) 弃用节点"
+        },
+        {
+          "signal": "self_introduction",
+          "action": "演讲者自我介绍已加入黑名单过滤，可进一步收集更多姓名格式变体",
+          "confidence": "high",
+          "impact": "可拦截 3 条 (16.7%) 弃用节点"
+        },
+        {
+          "signal": "unclassified",
+          "action": "有 10 条未分类节点，建议人工复审，归纳新规则类型",
+          "confidence": "low",
+          "impact": "未知，需人工判断"
+        }
+      ]
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:52:45.045344+00:00",
+    "started_at": "2026-05-25T10:52:45.045344+00:00",
+    "finished_at": "2026-05-25T10:52:48.050042+00:00"
+  },
+  "f0477916-6a82-4f17-bd13-ea26ff31eeb5": {
+    "status": "done",
+    "description": "视频切片: 我是如何实现自我救赎的 ",
+    "result": {
+      "show_name": "我是如何实现自我救赎的",
+      "episode": "",
+      "transcript_count": 198,
+      "nodes_total": 93,
+      "high_conf": 49,
+      "low_conf": 37,
+      "unmatched": 2,
+      "failed": 1,
+      "clips_generated": 93,
+      "subtitle_fallback": 7
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:54:44.645214+00:00",
+    "started_at": "2026-05-25T10:54:44.645214+00:00",
+    "finished_at": "2026-05-25T11:00:15.833101+00:00"
+  },
+  "da12599b-79cb-4cf8-8917-4292c17097b2": {
+    "status": "done",
+    "description": "视频切片: 老友记 S01E01",
+    "result": {
+      "show_name": "老友记",
+      "episode": "S01E01",
+      "transcript_count": 653,
+      "nodes_total": 275,
+      "high_conf": 114,
+      "low_conf": 112,
+      "unmatched": 21,
+      "failed": 0,
+      "clips_generated": 274,
+      "subtitle_fallback": 48
+    },
+    "error": null,
+    "created_at": "2026-05-25T10:56:47.919881+00:00",
+    "started_at": "2026-05-25T11:00:15.841131+00:00",
+    "finished_at": "2026-05-25T11:16:29.404394+00:00"
+  }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dramalingo · 影视台词检索</title>
+<style>
+:root {
+  --brand: #7B2FBE; --brand2: #C850C0; --gold: #E8A020;
+  --bg: #f8f5ff; --card: #fff; --border: #ede9f8;
+  --text: #1a1a2e; --muted: #8b7aad; --r: 14px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+/* ── 导航 ── */
+.navbar { background: rgba(30,5,53,.95); backdrop-filter: blur(20px); padding: 0 32px; height: 54px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo-ico { width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg,#7B2FBE,#C850C0); display: flex; align-items: center; justify-content: center; font-size: 15px; }
+.logo-name { color: #fff; font-weight: 800; font-size: 15px; }
+.logo-badge { background: linear-gradient(135deg,#E8A020,#F5C842); color: #4a1070; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 20px; }
+.nav-links { display: flex; gap: 4px; }
+.nav-links a { color: rgba(255,255,255,.7); font-size: 13px; padding: 6px 12px; border-radius: 8px; text-decoration: none; transition: all .15s; }
+.nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(255,255,255,.15); }
+
+/* ── Hero ── */
+.hero { background: linear-gradient(135deg,#1e0535 0%,#4a1070 50%,#2d0a4e 100%); padding: 56px 32px 0; text-align: center; position: relative; overflow: hidden; }
+.hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 0%,rgba(200,80,192,.3) 0%,transparent 60%); pointer-events:none; }
+.hero h1 { color:#fff; font-size:34px; font-weight:900; line-height:1.2; margin-bottom:10px; position:relative; }
+.hero h1 span { background:linear-gradient(135deg,#E8A020,#F5C842); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.hero p { color:rgba(255,255,255,.65); font-size:14px; margin-bottom:28px; position:relative; }
+
+/* ── 搜索框 ── */
+.search-wrap { max-width: 580px; margin: 0 auto; position: relative; }
+.search-box { width:100%; padding:15px 56px 15px 20px; border-radius:16px; border:none; font-size:14px; outline:none; box-shadow:0 8px 32px rgba(0,0,0,.3); background:#fff; color:var(--text); }
+.search-box::placeholder { color:#b0a0c8; }
+.search-btn { position:absolute; right:8px; top:50%; transform:translateY(-50%); background:linear-gradient(135deg,#7B2FBE,#C850C0); border:none; border-radius:10px; width:38px; height:38px; cursor:pointer; font-size:15px; color:#fff; display:flex; align-items:center; justify-content:center; transition:all .15s; }
+.search-btn:hover { transform:translateY(-50%) scale(1.05); }
+.search-hint { color:rgba(255,255,255,.4); font-size:11px; margin-top:8px; position:relative; padding-bottom:24px; }
+
+/* ── 统计横幅 ── */
+.stats-banner { display:flex; justify-content:center; background:rgba(255,255,255,.06); border-top:1px solid rgba(255,255,255,.1); }
+.stat-item { padding:14px 36px; text-align:center; border-right:1px solid rgba(255,255,255,.1); }
+.stat-item:last-child { border-right:none; }
+.stat-num { color:#fff; font-size:24px; font-weight:900; }
+.stat-lbl { color:rgba(255,255,255,.5); font-size:10px; margin-top:2px; }
+
+/* ── 主内容 ── */
+.main { max-width: 1200px; margin: 0 auto; padding: 24px 20px 48px; }
+
+/* ── 搜索模式提示 ── */
+.search-mode-bar { background:linear-gradient(135deg,#f3e8ff,#fce7f3); border:1px solid #e9d5ff; border-radius:10px; padding:10px 16px; margin-bottom:14px; display:flex; align-items:center; gap:10px; font-size:13px; }
+.search-mode-bar strong { color:var(--brand); }
+.search-mode-bar button { background:none; border:none; color:var(--muted); cursor:pointer; font-size:12px; margin-left:auto; }
+.search-mode-bar button:hover { color:var(--brand); }
+
+/* ── 筛选工具栏 ── */
+.filter-bar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:18px; padding:12px 16px; background:var(--card); border-radius:var(--r); border:1px solid var(--border); box-shadow:0 1px 6px rgba(123,47,190,.06); }
+.filter-bar select { padding:6px 10px; border:1px solid var(--border); border-radius:9px; font-size:12px; outline:none; background:#fff; cursor:pointer; }
+.filter-bar select:focus { border-color:var(--brand); }
+.filter-bar .spacer { flex:1; }
+.filter-bar .count { font-size:12px; color:var(--muted); }
+.filter-bar .count strong { color:var(--brand); }
+
+/* ── 卡片网格 ── */
+.cards-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:14px; }
+
+.phrase-card { background:var(--card); border-radius:var(--r); border:1px solid var(--border); padding:16px; box-shadow:0 2px 8px rgba(123,47,190,.06); transition:all .2s; position:relative; overflow:hidden; }
+.phrase-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(135deg,#7B2FBE,#C850C0); }
+.phrase-card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(123,47,190,.14); border-color:#c4b5e8; }
+
+.card-meta { display:flex; align-items:center; gap:5px; margin-bottom:10px; flex-wrap:wrap; }
+.card-show { font-size:11px; color:var(--muted); font-weight:600; }
+.badge { display:inline-block; padding:2px 7px; border-radius:20px; font-size:10px; font-weight:700; white-space:nowrap; }
+.badge-beginner { background:#dbeafe; color:#1e40af; }
+.badge-intermediate { background:#fef9c3; color:#92400e; }
+.badge-advanced { background:#fce7f3; color:#9d174d; }
+.badge-scene { background:#f3e8ff; color:#6b21a8; }
+.badge-occ { background:#dcfce7; color:#166534; }
+
+.card-en { font-size:15px; font-weight:700; color:var(--text); line-height:1.5; margin-bottom:8px; }
+.card-zh { font-size:13px; color:var(--muted); line-height:1.5; padding:8px 11px; background:#faf5ff; border-radius:8px; border-left:3px solid #c4b5e8; }
+.card-zh.empty { color:#d97706; font-style:italic; background:#fef9c3; border-left-color:#fde68a; font-size:12px; }
+
+.card-kw { margin-top:8px; display:flex; flex-wrap:wrap; gap:4px; }
+.kw-tag { background:#f3ecff; color:#7B2FBE; font-size:10px; padding:2px 6px; border-radius:4px; }
+
+.card-footer { display:flex; align-items:center; justify-content:space-between; margin-top:10px; padding-top:8px; border-top:1px solid var(--border); }
+.card-time { font-size:11px; color:var(--muted); }
+.card-score { font-size:11px; color:var(--muted); }
+
+/* ── 空状态 ── */
+.empty-state { text-align:center; padding:80px 24px; color:var(--muted); }
+.empty-state .ico { font-size:48px; margin-bottom:12px; }
+.empty-state h3 { font-size:17px; font-weight:700; color:var(--text); margin-bottom:8px; }
+.empty-state p { font-size:13px; }
+.empty-state a { color:var(--brand); }
+.empty-state .cta { display:inline-block; margin-top:16px; padding:10px 24px; border-radius:12px; background:linear-gradient(135deg,#7B2FBE,#C850C0); color:#fff; font-size:13px; font-weight:600; text-decoration:none; }
+
+/* ── 骨架屏 ── */
+.skeleton { background:linear-gradient(90deg,#f0e8ff 25%,#e8d5ff 50%,#f0e8ff 75%); background-size:200% 100%; animation:shimmer 1.5s infinite; border-radius:8px; }
+@keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+.skel-card { background:var(--card); border-radius:var(--r); border:1px solid var(--border); padding:16px; height:150px; }
+
+/* ── 分页 ── */
+.pagination { display:flex; align-items:center; gap:6px; justify-content:center; margin-top:28px; }
+.page-btn { padding:7px 13px; border-radius:9px; border:1px solid var(--border); background:#fff; font-size:12px; cursor:pointer; transition:all .15s; }
+.page-btn:hover { border-color:var(--brand); color:var(--brand); }
+.page-btn.active { background:var(--brand); color:#fff; border-color:var(--brand); }
+.page-btn:disabled { opacity:.4; cursor:not-allowed; }
+.page-info { font-size:12px; color:var(--muted); }
+
+/* ── Footer ── */
+.footer { text-align:center; padding:20px; font-size:11px; color:var(--muted); border-top:1px solid var(--border); }
+.footer a { color:var(--brand); text-decoration:none; }
+
+@media (max-width:768px) {
+  .hero h1 { font-size:24px; }
+  .stats-banner { flex-wrap:wrap; }
+  .stat-item { padding:10px 20px; }
+  .cards-grid { grid-template-columns:1fr; }
+  .navbar { padding:0 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── 导航栏 ── -->
+<nav class="navbar">
+  <a class="logo" href="#">
+    <div class="logo-ico">🎬</div>
+    <span class="logo-name">Dramalingo</span>
+    <span class="logo-badge">Beta</span>
+  </a>
+  <div class="nav-links">
+    <a href="#" class="active">📚 台词库</a>
+    <a href="/static/admin.html">⚙️ 管理后台</a>
+    <a href="/docs" target="_blank">📡 API</a>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <h1>用中文找到最<span>地道</span>的英文表达</h1>
+  <p>从真实影视台词中学习，每一句都有出处，每一句都值得记忆</p>
+  <div class="search-wrap">
+    <input class="search-box" id="searchInput" placeholder="输入你想表达的意思，如「我不在乎别人怎么看我」" onkeydown="if(event.key==='Enter')doSearch()">
+    <button class="search-btn" onclick="doSearch()">🔍</button>
+  </div>
+  <div class="search-hint">⚡ 语义检索将在 Step 10 上线 · 当前为知识库浏览模式</div>
+  <div class="stats-banner">
+    <div class="stat-item"><div class="stat-num" id="statNodes">—</div><div class="stat-lbl">台词知识节点</div></div>
+    <div class="stat-item"><div class="stat-num" id="statShows">—</div><div class="stat-lbl">影视剧集</div></div>
+    <div class="stat-item"><div class="stat-num" id="statZh">—</div><div class="stat-lbl">已有中文翻译</div></div>
+    <div class="stat-item"><div class="stat-num" id="statRate">—</div><div class="stat-lbl">翻译覆盖率</div></div>
+  </div>
+</section>
+
+<!-- ── 主内容 ── -->
+<main class="main">
+
+  <!-- 搜索模式提示 -->
+  <div class="search-mode-bar" id="searchModeBar" style="display:none;">
+    🔍 搜索「<strong id="searchKeyword"></strong>」，共 <strong id="searchResultCount">0</strong> 条结果
+    <button onclick="clearSearch()">✕ 清除</button>
+  </div>
+
+  <!-- 筛选工具栏 -->
+  <div class="filter-bar">
+    <select id="filterShow" onchange="loadCards()"><option value="">全部剧集</option></select>
+    <select id="filterDiff" onchange="loadCards()">
+      <option value="">全部难度</option>
+      <option value="beginner">🔵 入门</option>
+      <option value="intermediate">🟡 进阶</option>
+      <option value="advanced">🔴 挑战</option>
+    </select>
+    <select id="filterScene" onchange="loadCards()">
+      <option value="">全部场景</option>
+      <option value="daily">日常</option><option value="workplace">职场</option>
+      <option value="emotional">情感</option><option value="restaurant">餐厅</option>
+      <option value="travel">旅行</option><option value="study">学习</option>
+      <option value="medical">医疗</option><option value="legal">法律</option><option value="tech">科技</option>
+    </select>
+    <select id="filterZh" onchange="loadCards()">
+      <option value="">全部</option>
+      <option value="has_zh">✅ 已有中文</option>
+      <option value="no_zh">⚠️ 待翻译</option>
+    </select>
+    <div class="spacer"></div>
+    <span class="count">共 <strong id="totalCount">—</strong> 条台词</span>
+  </div>
+
+  <!-- 卡片网格 -->
+  <div class="cards-grid" id="cardsGrid"></div>
+  <div id="emptyState" class="empty-state" style="display:none;">
+    <div class="ico">🎬</div>
+    <h3>知识库暂无内容</h3>
+    <p>请前往<a href="/static/admin.html">管理后台</a>上传字幕文件，开始构建台词知识库</p>
+    <a class="cta" href="/static/admin.html">前往管理后台 →</a>
+  </div>
+
+  <!-- 分页 -->
+  <div class="pagination" id="pagination"></div>
+</main>
+
+<div class="footer">
+  Dramalingo MVP · Step 1-6 ·
+  <a href="/static/admin.html">管理后台</a> ·
+  <a href="/docs" target="_blank">API 文档</a>
+</div>
+
+<script>
+const API = '';
+let curPage = 1;
+const PAGE_SIZE = 24;
+let isSearchMode = false;
+let searchKw = '';
+
+async function apiFetch(path) {
+  const r = await fetch(API + path);
+  if(!r.ok) throw new Error(r.statusText);
+  return r.json();
+}
+
+function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function fmt(s) { if(!s&&s!==0) return ''; const m=Math.floor(s/60),sec=Math.floor(s%60); return `${m}:${String(sec).padStart(2,'0')}`; }
+
+function diffBadge(d) {
+  const m={beginner:['badge-beginner','🔵 入门'],intermediate:['badge-intermediate','🟡 进阶'],advanced:['badge-advanced','🔴 挑战']};
+  const [c,l]=m[d]||['',''];
+  return l?`<span class="badge ${c}">${l}</span>`:'';
+}
+
+// ── 加载统计 ──
+async function loadStats() {
+  try {
+    const k = await apiFetch('/knowledge/status');
+    document.getElementById('statNodes').textContent = (k.total_nodes||0).toLocaleString();
+    document.getElementById('statShows').textContent = (k.by_show||[]).length;
+    document.getElementById('statZh').textContent = (k.with_zh_translation||0).toLocaleString();
+    document.getElementById('statRate').textContent = k.total_nodes ? Math.round((k.translation_rate||0)*100)+'%' : '0%';
+    const sel = document.getElementById('filterShow');
+    const cur = sel.value;
+    sel.innerHTML = '<option value="">全部剧集</option>' +
+      (k.by_show||[]).map(s=>`<option value="${esc(s.show_name)}" ${s.show_name===cur?'selected':''}>${esc(s.show_name)} (${s.count})</option>`).join('');
+  } catch(e){}
+}
+
+// ── 搜索 ──
+function doSearch() {
+  const kw = document.getElementById('searchInput').value.trim();
+  if(!kw) { clearSearch(); return; }
+  isSearchMode = true; searchKw = kw; curPage = 1;
+  document.getElementById('searchModeBar').style.display='flex';
+  document.getElementById('searchKeyword').textContent = kw;
+  loadCards();
+}
+
+function clearSearch() {
+  isSearchMode = false; searchKw = '';
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchModeBar').style.display='none';
+  curPage = 1; loadCards();
+}
+
+// ── 加载卡片 ──
+async function loadCards(page) {
+  if(page!==undefined) curPage=page;
+  const show=document.getElementById('filterShow').value;
+  const diff=document.getElementById('filterDiff').value;
+  const scene=document.getElementById('filterScene').value;
+  const zhF=document.getElementById('filterZh').value;
+
+  const p=new URLSearchParams({page:curPage,page_size:PAGE_SIZE});
+  if(show) p.set('show_name',show);
+  if(diff) p.set('difficulty',diff);
+  if(scene) p.set('scene',scene);
+  if(isSearchMode&&searchKw) p.set('keyword',searchKw);
+  if(zhF==='has_zh') p.set('has_zh','1');
+  if(zhF==='no_zh') p.set('no_zh','1');
+
+  const grid=document.getElementById('cardsGrid');
+  grid.innerHTML=Array(6).fill('<div class="skel-card skeleton"></div>').join('');
+  document.getElementById('emptyState').style.display='none';
+
+  try {
+    const data = await apiFetch('/knowledge/nodes?'+p);
+    const total = data.total;
+    document.getElementById('totalCount').textContent = total.toLocaleString();
+    if(isSearchMode) document.getElementById('searchResultCount').textContent = total;
+
+    if(!data.items||!data.items.length) {
+      grid.innerHTML='';
+      document.getElementById('emptyState').style.display='block';
+      document.getElementById('pagination').innerHTML='';
+      return;
+    }
+
+    grid.innerHTML = data.items.map(n=>renderCard(n)).join('');
+    renderPager(curPage, Math.ceil(total/PAGE_SIZE));
+  } catch(e) {
+    grid.innerHTML='';
+    document.getElementById('emptyState').style.display='block';
+  }
+}
+
+function renderCard(n) {
+  const hasZh = n.zh_text && n.zh_text.trim();
+  const kws = (n.keywords||[]).slice(0,4);
+  const occBadge = n.occurrence_count>1?`<span class="badge badge-occ">×${n.occurrence_count}</span>`:'';
+  return `
+  <div class="phrase-card">
+    <div class="card-meta">
+      <span class="card-show">📺 ${esc(n.show_name)} ${esc(n.episode||'')}</span>
+      ${diffBadge(n.difficulty)}
+      ${n.scene?`<span class="badge badge-scene">${esc(n.scene)}</span>`:''}
+      ${occBadge}
+    </div>
+    <div class="card-en">${esc(n.en_text)}</div>
+    <div class="card-zh ${hasZh?'':'empty'}">
+      ${hasZh?esc(n.zh_text):'⚠ 暂无中文翻译，可在管理后台补充'}
+    </div>
+    ${kws.length?`<div class="card-kw">${kws.map(k=>`<span class="kw-tag">${esc(k)}</span>`).join('')}</div>`:''}
+    <div class="card-footer">
+      <span class="card-time">${n.start_time!=null?`⏱ ${fmt(n.start_time)}`:''}</span>
+      <span class="card-score">质量 ${n.quality_score!=null?n.quality_score.toFixed(2):'-'}</span>
+    </div>
+  </div>`;
+}
+
+function renderPager(cur, total) {
+  const el=document.getElementById('pagination');
+  if(total<=1){el.innerHTML='';return;}
+  let h=`<button class="page-btn" onclick="loadCards(${cur-1})" ${cur<=1?'disabled':''}>‹ 上一页</button>`;
+  const s=Math.max(1,cur-2),e=Math.min(total,cur+2);
+  if(s>1) h+=`<button class="page-btn" onclick="loadCards(1)">1</button>${s>2?'<span class="page-info">…</span>':''}`;
+  for(let i=s;i<=e;i++) h+=`<button class="page-btn ${i===cur?'active':''}" onclick="loadCards(${i})">${i}</button>`;
+  if(e<total) h+=`${e<total-1?'<span class="page-info">…</span>':''}<button class="page-btn" onclick="loadCards(${total})">${total}</button>`;
+  h+=`<button class="page-btn" onclick="loadCards(${cur+1})" ${cur>=total?'disabled':''}>下一页 ›</button>`;
+  el.innerHTML=h;
+}
+
+// ── 初始化 ──
+loadStats();
+loadCards();
+</script>
+</body>
+</html>
