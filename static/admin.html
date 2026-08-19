@@ -235,6 +235,75 @@ td{padding:8px 11px;vertical-align:middle}
 .clip-card-show{font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:130px}
 .clip-card-actions{display:flex;gap:4px;flex-shrink:0}
 </style>
+<style id="arco-admin-overrides">
+/* Arco Design System alignment: primary-6 #165DFF, text-1/2/3, border-2, fill-1/2 */
+:root{
+  --brand:#165DFF;--brand2:#4080FF;--gold:#F7BA1E;
+  --brand-grad:linear-gradient(180deg,#165DFF 0%,#165DFF 100%);
+  --sidebar-bg:#fff;--bg:#f7f8fa;--card:#fff;--border:#e5e6eb;
+  --text:#1d2129;--muted:#86909c;--green:#00b42a;--red:#f53f3f;
+  --yellow:#ff7d00;--blue:#165dff;--r:4px;
+}
+html{font-size:14px}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;line-height:1.57;background:var(--bg);color:var(--text)}
+button,input,select,textarea{font:inherit}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid rgba(22,93,255,.35);outline-offset:1px}
+
+/* Navigation / PageHeader */
+.sidebar{width:240px;background:#fff;border-right:1px solid var(--border);box-shadow:none}
+.sb-logo{height:72px;padding:0 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;text-align:left}
+.sb-logo .row{display:flex;align-items:center;gap:10px;width:100%}
+.sb-logo .ico{width:32px;height:32px;border-radius:6px;background:#e8f3ff;color:var(--brand);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:inset 0 0 0 1px #c9e2ff}
+.sb-logo-img{width:32px;height:32px;object-fit:contain;margin:0}.sb-logo-fallback{width:32px;height:32px;border-radius:6px;margin:0;background:var(--brand);box-shadow:none}
+.sb-logo .name{color:var(--text);font-size:16px;font-weight:700;background:none;-webkit-text-fill-color:initial}
+.sb-logo .sub{color:var(--muted);font-size:12px}.sb-logo .mvp{margin:5px 0 0;padding:1px 6px;border-radius:2px;color:var(--brand);background:#e8f3ff}
+nav{padding:12px}.nav-sec{padding:12px 12px 6px;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.02em}
+.nav-item{height:36px;margin:2px 0;padding:0 12px;border:1px solid transparent;border-radius:4px;color:var(--text);font-size:14px;font-weight:400;gap:10px}
+.nav-item:hover{color:var(--brand);background:#f2f3f5}.nav-item.active{color:var(--brand);background:#e8f3ff;border-color:transparent;font-weight:500}
+.sb-footer{padding:10px 16px;border-top:1px solid var(--border)}.sb-mini-stat .k{color:var(--muted)}.sb-mini-stat .v{color:var(--text)}
+.main{min-width:0}.topbar{height:64px;padding:0 24px;background:#fff;border-bottom:1px solid var(--border);backdrop-filter:none}
+.topbar h1{font-size:20px;line-height:28px;font-weight:500;color:var(--text);background:none;-webkit-text-fill-color:initial}.topbar .tb-right{gap:12px}
+.content{padding:24px;background:var(--bg)}.page{max-width:1440px;margin:0 auto}
+
+/* Arco surfaces, typography and controls */
+.card,.stat-card{border-radius:4px;border-color:var(--border);box-shadow:none}.card{padding:20px;margin-bottom:16px}.card-title{font-size:16px;line-height:24px;font-weight:500;color:var(--text);margin-bottom:16px}
+.stat-card{padding:16px;transition:box-shadow .2s,border-color .2s}.stat-card:hover{box-shadow:0 6px 18px rgba(29,33,41,.1);border-color:#c9cdd4}.stat-card .sc-label{font-size:13px;color:var(--muted)}.stat-card .sc-value{font-size:28px;line-height:36px;font-weight:600}.stat-card .sc-sub{font-size:12px}.stat-card.purple .sc-value{color:var(--brand);background:none;-webkit-text-fill-color:initial}
+.tabs{margin-bottom:20px;border-bottom:1px solid var(--border)}.tab{padding:10px 16px;font-size:14px;font-weight:400;color:var(--muted)}.tab:hover{color:var(--brand)}.tab.active{color:var(--brand);border-bottom-color:var(--brand);font-weight:500}
+.form-row{gap:12px;margin-bottom:16px}.form-group{gap:6px}.form-group label{font-size:13px;color:var(--text);font-weight:400}
+input[type=text],input[type=number],input[type=date],select,textarea{height:32px;border-color:var(--border);border-radius:4px;padding:4px 12px;font-size:14px;color:var(--text)}
+input[type=text]:hover,input[type=number]:hover,input[type=date]:hover,select:hover,textarea:hover{border-color:#c9cdd4}
+input[type=text]:focus,input[type=number]:focus,input[type=date]:focus,select:focus,textarea:focus{border-color:var(--brand);box-shadow:0 0 0 2px rgba(22,93,255,.12)}
+input[type=file]{height:32px;padding:4px 8px;border-radius:4px;border-color:var(--border)}textarea{min-height:80px}.chk-label{font-size:14px;gap:8px}.chk-label input{accent-color:var(--brand)}
+.btn{height:32px;padding:0 16px;border-radius:4px;font-size:14px;font-weight:400;border:1px solid transparent;gap:6px}.btn-primary{background:var(--brand);box-shadow:none}.btn-primary:hover{background:#4080ff;transform:none;box-shadow:none}.btn-sm{height:28px;padding:0 12px;font-size:13px}
+.btn-outline{background:#fff;color:var(--brand);border-color:#c9cdd4}.btn-outline:hover{border-color:var(--brand);background:#e8f3ff;box-shadow:none}.btn-success{background:#e8ffea;color:#00a329}.btn-danger{background:#ffece8;color:#f53f3f}.btn-warning{background:#fff7e8;color:#ff7d00}
+.sj-filter-btn:hover{background:#f2f3f5;color:var(--brand);border-color:#c9cdd4}.sj-filter-btn.active{background:var(--brand);border-color:var(--brand)}
+.upload-zone{border:1px dashed #c9cdd4;border-radius:4px;padding:32px;background:#fff}.upload-zone:hover,.upload-zone.drag-over{border-color:var(--brand);background:#f7fbff;box-shadow:0 0 0 2px rgba(22,93,255,.08)}.upload-zone p{font-size:13px}.progress-bar{height:6px;background:#f2f3f5;border-radius:3px}.progress-fill{background:var(--brand);border-radius:3px}
+
+/* Tables / tags / messages */
+.filter-bar{gap:12px;margin-bottom:16px;padding:12px 16px;border-radius:4px;border-color:var(--border);background:#fff}.filter-bar label{font-size:13px}.filter-bar select,.filter-bar input[type=text]{height:30px;padding:3px 10px}
+.batch-bar{padding:10px 16px;border-radius:4px;background:#e8f3ff;border-color:#c9e2ff}.batch-bar .cnt{color:var(--brand)}
+.table-wrap{border-radius:4px;border-color:var(--border);background:#fff}table{font-size:14px}thead th{padding:12px 16px;background:#f7f8fa;font-size:13px;font-weight:500;color:var(--muted);text-transform:none;letter-spacing:0}tbody tr:hover{background:#f7faff}td{padding:12px 16px}.td-en{font-size:14px}.td-zh{font-size:13px}
+.badge{padding:2px 8px;border-radius:2px;font-size:12px;font-weight:400}.badge-blue{background:#e8f3ff;color:#165dff}.badge-green{background:#e8ffea;color:#00a329}.badge-orange{background:#fff7e8;color:#ff7d00}.badge-red{background:#ffece8;color:#f53f3f}.badge-gray{background:#f2f3f5;color:#4e5969}.badge-purple{background:#f2eaff;color:#722ed1}
+.page-btn{min-width:28px;height:28px;padding:0 8px;border-radius:4px;font-size:13px}.page-btn.active{background:var(--brand);border-color:var(--brand)}.pagination{margin-top:16px}.page-info{font-size:13px}
+.alert{padding:10px 12px;border-radius:4px;font-size:13px}.alert-info{background:#e8f3ff;color:#165dff;border-color:#c9e2ff}.alert-success{background:#e8ffea;color:#00a329;border-color:#aff0b5}.alert-warning{background:#fff7e8;color:#ff7d00;border-color:#ffe4ba}.alert-danger{background:#ffece8;color:#f53f3f;border-color:#ffccc7}
+.job-panel{background:#f7f8fa;border-color:var(--border);border-radius:4px;padding:16px}.job-panel .jp-title{font-size:14px;font-weight:500}.job-panel .jp-meta{font-size:13px}
+
+/* Dialogs, toast and media cards */
+.modal{border-radius:4px;padding:24px;box-shadow:0 12px 32px rgba(0,0,0,.16)}.modal-title{font-size:20px;line-height:28px;font-weight:500;color:var(--text)}.modal-close{border-radius:4px}.modal-close:hover{background:#f2f3f5;color:var(--text)}.modal-field label{font-size:13px;color:var(--text);font-weight:400}.modal-3col,.modal-2col{gap:12px}.modal-ft{margin-top:20px}
+#toast{bottom:24px;right:24px}.toast-item{border-radius:4px;font-size:14px;font-weight:400;box-shadow:0 4px 16px rgba(0,0,0,.16)}.toast-item.success{background:#00b42a}.toast-item.error{background:#f53f3f}.toast-item.info{background:#165dff}
+.clip-grid{gap:16px}.clip-card{border-radius:4px;box-shadow:none}.clip-card:hover{box-shadow:0 6px 18px rgba(29,33,41,.1);transform:translateY(-1px)}.clip-thumb{background:#1d2129}.clip-thumb .th-placeholder{background:#1d2129}.clip-card-body{padding:12px 16px 14px}.clip-card-en{font-size:14px;font-weight:500}.clip-card-zh,.clip-card-show{font-size:13px}
+
+/* Figma Arco vector icons */
+.arco-icon{display:inline-block;width:16px;height:16px;flex:0 0 16px;object-fit:contain;vertical-align:-3px}
+.sb-logo .ico .arco-icon{width:20px;height:20px;flex-basis:20px}.uz-icon .arco-icon{width:28px;height:28px;flex-basis:28px}.empty .ei .arco-icon{width:24px;height:24px;flex-basis:24px}.th-play-btn .arco-icon{width:18px;height:18px;flex-basis:18px}
+.nav-item .arco-icon,.btn .arco-icon,.tab .arco-icon,.card-title .arco-icon,.modal-title .arco-icon,.sj-filter-btn .arco-icon{margin-right:2px}
+.nav-item.active .arco-icon{filter:brightness(0) saturate(100%) invert(30%) sepia(96%) saturate(2782%) hue-rotate(214deg) brightness(97%) contrast(104%)}.btn-primary .arco-icon{filter:brightness(0) invert(1)}
+
+/* Existing inline hints are still valid layout hints; normalize their legacy palette. */
+#btn-retag-toggle{border-color:#c9cdd4!important;color:var(--brand)!important}.content [style*="#f5f3ff"]{background:#e8f3ff!important}.content [style*="#faf5ff"]{background:#f7f8fa!important;border-color:var(--border)!important}.content [style*="#f8f5ff"]{background:#f7f8fa!important}.content [style*="#e9d5ff"]{border-color:var(--border)!important}.content [style*="#7c3aed"]{color:var(--brand)!important}.content [style*="#1a1a2e"]{color:var(--text)!important}
+@media (max-width:900px){.sidebar{width:208px}.content{padding:16px}.topbar{padding:0 16px}.card{padding:16px}}
+@media (max-width:640px){.sidebar{width:64px}.sb-logo{padding:0 16px}.sb-logo .row>div:not(.ico),.sb-logo .mvp,.nav-sec{display:none}.nav-item{justify-content:center;padding:0;font-size:0;height:40px}.nav-item::first-letter{font-size:18px}.sb-footer{display:none}.content{padding:12px}.topbar h1{font-size:18px}}
+</style>
 </head>
 <body>
 
@@ -1195,6 +1264,49 @@ td{padding:8px 11px;vertical-align:middle}
 <div id="toast"></div>
 
 <script>
+// Arco 图标均来自 Figma 设计文件导出的本地 SVG，避免使用过期远程资源。
+const ARCO_ICON_ROOT = '/static/icons/';
+const ARCO_ICON_MAP = {
+  '🎬':'video.svg','🎥':'video.svg','📺':'video.svg','📄':'file-video.svg','📚':'book.svg','📋':'list.svg','📜':'list.svg',
+  '📤':'upload.svg','⬆️':'upload.svg','⬆':'upload.svg','📥':'download.svg','⬇️':'download.svg','✂️':'scissor.svg',
+  '📊':'dashboard.svg','📡':'nav.svg','📦':'folder.svg','📁':'folder.svg','🌐':'translate.svg','🀄':'translate.svg',
+  '⚙️':'settings.svg','⚡':'sync.svg','🔄':'refresh.svg','🔍':'search.svg','🤖':'robot.svg','🔗':'link.svg',
+  '✏️':'edit.svg','📝':'edit.svg','🗑️':'delete.svg','🗑':'delete.svg','✕':'close.svg','❌':'close.svg','✅':'check.svg',
+  '↩️':'rotate-left.svg','⏳':'loading.svg','🎓':'trophy.svg','▶️':'play.svg','▶':'play.svg','👁️':'eye.svg',
+  '💾':'save.svg','⚠️':'exclamation-circle.svg','🎤':'voice.svg','🎙️':'voice.svg','⏸':'pause.svg','🏷️':'tag.svg'
+};
+const ARCO_ICON_KEYS = Object.keys(ARCO_ICON_MAP).sort((a,b)=>b.length-a.length);
+function stripArcoIcon(value) {
+  if (!value) return value;
+  const text = String(value);
+  const key = ARCO_ICON_KEYS.find(k=>text.trimStart().startsWith(k));
+  return key ? text.trimStart().slice(key.length).trimStart() : text;
+}
+function replaceLeadingArcoIcon(textNode) {
+  const raw = textNode.nodeValue || '';
+  const leading = raw.match(/^(\s*)/)[1];
+  const content = raw.slice(leading.length);
+  const key = ARCO_ICON_KEYS.find(k=>content.startsWith(k));
+  if (!key) return false;
+  const img = document.createElement('img');
+  img.className = 'arco-icon'; img.src = ARCO_ICON_ROOT + ARCO_ICON_MAP[key]; img.alt = ''; img.setAttribute('aria-hidden','true');
+  const rest = document.createTextNode(leading + content.slice(key.length));
+  textNode.parentNode.insertBefore(img, textNode); textNode.parentNode.replaceChild(rest, textNode);
+  return true;
+}
+function replaceAdminIcons(root=document) {
+  const selector = '.sb-logo .ico,.nav-item,.btn,.tab,.card-title,.modal-title,.empty .ei,.uz-icon,.th-play-btn,.sj-filter-btn,.alert,.job-panel .jp-title';
+  root.querySelectorAll(selector).forEach(el=>{
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const nodes=[]; let node; while(node=walker.nextNode()) nodes.push(node);
+    nodes.forEach(replaceLeadingArcoIcon);
+  });
+}
+function observeAdminIcons() {
+  replaceAdminIcons();
+  new MutationObserver(()=>replaceAdminIcons()).observe(document.body,{subtree:true,childList:true});
+}
+
 // ═══ GLOBALS ═══
 const API = '';
 let knPage=1, knTotal=0, knPageSize=20;
@@ -1242,7 +1354,7 @@ function switchPage(name, btn, title) {
   document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
   document.getElementById(`page-${name}`).classList.add('active');
   btn.classList.add('active');
-  document.getElementById('pageTitle').textContent = title;
+  document.getElementById('pageTitle').textContent = stripArcoIcon(title);
   if (name==='library') { _initKnThreshold(); loadKnShows(); loadKnowledge(1); }
   if (name==='records') { loadSubShows(); loadSubtitles(1); }
   if (name==='jobs') { loadJobs(); _ensureAutoRefresh(); }
@@ -1255,7 +1367,7 @@ function switchVideoPage(tabId, loadFn, btn, title) {
   document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
   document.getElementById('page-videos').classList.add('active');
   btn.classList.add('active');
-  document.getElementById('pageTitle').textContent = title;
+  document.getElementById('pageTitle').textContent = stripArcoIcon(title);
   // 切换 tab panel
   document.querySelectorAll('#page-videos .tab-panel').forEach(p => p.classList.remove('active'));
   document.getElementById(tabId).classList.add('active');
@@ -4186,6 +4298,7 @@ function renderOffsetPager(containerId, offset, limit, total, loadFn) {
 
 // ═══ INIT ═══
 document.addEventListener('DOMContentLoaded',()=>{
+  observeAdminIcons();
   checkHealth();
   refreshAll();
   _initKnThreshold();
