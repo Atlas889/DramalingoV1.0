@@ -1,11 +1,11 @@
 # DramaLingo 本地服务一键启动脚本
-# 用法：双击 start.bat，或在 PowerShell 中执行 .\start.ps1
+# 用法：双击 scripts\startup\start.bat，或执行 .\scripts\startup\start.ps1
 
 # 强制 UTF-8 输出，避免中文乱码
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 
-$ProjectDir = $PSScriptRoot
+$ProjectDir = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 Set-Location $ProjectDir
 
 # ── 检查虚拟环境 ──────────────────────────────────────────────

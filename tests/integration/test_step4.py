@@ -8,7 +8,9 @@ import sys
 import warnings
 warnings.filterwarnings("ignore")
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
+from config import INDEX_DIR
 
 print("=" * 60)
 print("Step 4 · 两段式去重逻辑 · 交付标准验证")
@@ -103,7 +105,7 @@ async def test_dedup():
 
         # 重建索引
         index, mapping = await rebuild_index_from_db(
-            session, force_full=True, index_path="indexes/knowledge.index"
+            session, force_full=True, index_path=str(INDEX_DIR / "knowledge.index")
         )
         print(f"  索引重建完成，共 {index.ntotal} 条向量")
 

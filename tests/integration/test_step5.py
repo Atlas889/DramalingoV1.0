@@ -8,7 +8,8 @@ import sys
 import warnings
 warnings.filterwarnings("ignore")
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
 
 print("=" * 60)
 print("Step 5 · AI 打标 + 翻译 + 字幕流水线组装 · 交付标准验证")
@@ -201,7 +202,7 @@ pipeline_result = asyncio.run(test_pipeline())
 print("\n[测试 4] 数据库写入完整性")
 import sqlite3
 
-conn = sqlite3.connect("dramalingo.db")
+conn = sqlite3.connect(os.path.join(PROJECT_ROOT, "data", "dramalingo.db"))
 cursor = conn.cursor()
 cursor.execute("""
     SELECT 
@@ -232,7 +233,7 @@ print("\n[测试 5] FAISS 索引更新")
 from services.faiss_index import load_index
 
 try:
-    index, mapping = load_index("indexes/knowledge.index")
+    index, mapping = load_index(os.path.join(PROJECT_ROOT, "data", "indexes", "knowledge.index"))
     print(f"  索引大小: {index.ntotal}，映射大小: {len(mapping)}")
     assert index.ntotal == len(mapping), f"索引与映射大小不一致: {index.ntotal} vs {len(mapping)}"
     assert index.ntotal > 0, "索引应有向量"

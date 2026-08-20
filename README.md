@@ -440,9 +440,9 @@ copy .env.example .env          # Windows
 **Windows（推荐）：**
 
 ```powershell
-# 方式 1：双击 start.bat
+# 方式 1：双击 scripts\startup\start.bat
 # 方式 2：PowerShell 脚本
-.\start.ps1
+.\scripts\startup\start.ps1
 
 # 方式 3：手动启动
 .venv\Scripts\activate
@@ -473,52 +473,34 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ```
 Dramalingo_mvp-main/
-├── main.py                  # FastAPI 应用入口，lifespan 管理，路由注册，增量迁移
-├── config.py                # 全局配置参数（路径、算法阈值、模型参数）
-├── database.py              # SQLAlchemy 异步引擎，WAL 模式，增量迁移
-├── requirements.txt         # Python 依赖
-├── .env.example             # 环境变量模板
-│
+├── main.py                  # FastAPI 应用入口、生命周期和路由注册
+├── config.py                # 全局路径、算法阈值、模型和服务配置
+├── database.py              # SQLAlchemy 异步引擎、WAL 和数据库初始化
 ├── models/                  # ORM 数据模型
-│   ├── subtitle.py          # subtitles_raw — 字幕原始行
-│   ├── knowledge_node.py    # knowledge_nodes — 知识节点（核心表）
-│   ├── node_source.py       # node_sources — 知识节点来源溯源
-│   ├── clip.py              # clips — 视频切片
-│   ├── video_file.py        # video_files — 已上传视频
-│   ├── whisper_transcript.py# whisper_transcripts — Whisper 转写缓存
-│   ├── subtitle_job.py      # subtitle_jobs — TED 字幕获取任务
-│   ├── persistent_task.py   # persistent_tasks — 任务持久化（重启恢复）
-│   └── search_feedback.py   # search_feedback — 用户搜索行为记录
+├── routers/                 # FastAPI 接口层（搜索、字幕、知识库、视频、切片）
+├── services/                # 字幕处理、向量检索、AI 打标、Whisper、切片等业务服务
+├── tasks/                   # 持久化异步任务调度器
+├── static/                  # 用户端、管理后台、Logo 和 Arco SVG 图标
 │
-├── routers/                 # FastAPI 路由
-│   ├── subtitles.py         # 字幕上传、列表、剧集查询
-│   ├── subtitle_jobs.py     # TED 字幕获取任务管理
-│   ├── knowledge.py         # 知识库 CRUD、统计、晋升、重打标
-│   ├── search.py            # 多信号语义检索
-│   ├── clips.py             # 视频切片生成与管理
-│   └── videos.py            # 视频文件上传与 Whisper 转写
+├── data/                    # 运行数据和测试结果，不作为源码依赖
+│   ├── dramalingo.db        # SQLite 数据库（运行时生成）
+│   ├── indexes/             # FAISS 索引（运行时生成）
+│   ├── media/               # 视频原文件、切片和缩略图（运行时生成）
+│   ├── uploads/             # 上传文件暂存区
+│   └── state/               # 调试结果和任务历史快照
 │
-├── services/                    # 核心业务逻辑
-│   ├── subtitle_pipeline.py     # 字幕处理完整流水线
-│   ├── subtitle_parser.py       # SRT/ASS 字幕解析（含 _parse_srt_text_only 纯文本解析器）
-│   ├── quality_filter.py        # 五道质量筛选（含 L2 语用完整性系数 P1–P5）
-│   ├── deprecated_analyzer.py   # 弃用节点模式分析（11 种模式，自动生成过滤改进建议）
-│   ├── embedder.py              # Embedding 向量化（multilingual-MiniLM）
-│   ├── deduplicator.py          # 两段式去重（编辑距离 + FAISS）
-│   ├── ai_tagger.py             # AI 打标（DeepSeek/Qwen），含 speech_act 25 种枚举
-│   ├── faiss_index.py           # FAISS 索引管理（增量/全量重建，en + zh 双索引）
-│   ├── query_engine.py          # 多信号排序、查询扩展、标签匹配
-│   ├── clip_pipeline.py         # 视频切片完整流水线
-│   ├── whisper_service.py       # Whisper 转写服务（永久缓存）
-│   ├── aligner.py               # 序列对齐（Levenshtein + Embedding + 顺序奖励）
-│   └── ted_fetcher.py           # TED 演讲字幕自动获取
-│
-├── tasks/
-│   └── task_runner.py       # 串行异步任务调度器（asyncio.Queue + DB 持久化）
-│
-└── static/
-    ├── admin.html           # 管理后台单页应用（Vanilla JS）
-    └── user.html            # 用户检索端
+├── tests/
+│   ├── integration/         # 交付标准、视频切片和 API 冒烟测试
+│   └── fixtures/            # 测试字幕等固定输入
+├── scripts/
+│   ├── startup/             # Windows 启动脚本
+│   ├── maintenance/         # 数据维护和迁移脚本
+│   └── diagnostics/         # 对齐、检索等诊断脚本
+├── docs/reports/            # 产品测评报告及生成脚本
+├── TED_ZIMU/                # TED 字幕抓取独立工具及样例
+├── requirements.txt         # Python 依赖
+├── package.json             # 报告生成所需 Node.js 依赖
+└── .env.example             # 环境变量模板
 ```
 
 ---
@@ -543,7 +525,7 @@ AI_API_BASE_URL=https://api.deepseek.com/v1
 # AI_API_BASE_URL_2=https://dashscope.aliyuncs.com/compatible-mode/v1
 
 # ── 文件存储根目录（视频、切片、临时文件）───────────
-DRAMALINGO_FILES_ROOT=E:\dramalingo-files
+DRAMALINGO_FILES_ROOT=./data
 
 # ── HuggingFace 镜像（国内必填，解决模型下载超时）──
 HF_ENDPOINT=https://hf-mirror.com
@@ -662,7 +644,7 @@ FFMPEG_CONCURRENT=4
 
 ## 数据库表结构
 
-SQLite 数据库，WAL 模式（支持读写并发），文件路径：`dramalingo.db`。
+SQLite 数据库，WAL 模式（支持读写并发），默认文件路径：`data/dramalingo.db`。
 
 ```
 subtitles_raw          — 字幕原始行（每条字幕一行，含筛选状态）
@@ -968,19 +950,19 @@ POST /clips/generate
 
 ```bash
 # 查看数据库文件（在项目根目录）
-sqlite3 dramalingo.db ".tables"
+sqlite3 data/dramalingo.db ".tables"
 
 # 关键查询：知识节点统计
-sqlite3 dramalingo.db "SELECT is_active, COUNT(*) FROM knowledge_nodes GROUP BY is_active;"
+sqlite3 data/dramalingo.db "SELECT is_active, COUNT(*) FROM knowledge_nodes GROUP BY is_active;"
 
 # 查看最近弃用的节点
-sqlite3 dramalingo.db "SELECT id, en_text, quality_score FROM knowledge_nodes WHERE is_active=0 ORDER BY id DESC LIMIT 20;"
+sqlite3 data/dramalingo.db "SELECT id, en_text, quality_score FROM knowledge_nodes WHERE is_active=0 ORDER BY id DESC LIMIT 20;"
 
 # 查看中断的任务（进程异常退出后）
-sqlite3 dramalingo.db "SELECT task_id, description, status, created_at FROM persistent_tasks WHERE status='interrupted';"
+sqlite3 data/dramalingo.db "SELECT task_id, description, status, created_at FROM persistent_tasks WHERE status='interrupted';"
 
 # 查看搜索反馈统计
-sqlite3 dramalingo.db "SELECT action, COUNT(*) FROM search_feedback GROUP BY action;"
+sqlite3 data/dramalingo.db "SELECT action, COUNT(*) FROM search_feedback GROUP BY action;"
 ```
 
 ### 已知陷阱（坑）
@@ -990,7 +972,7 @@ sqlite3 dramalingo.db "SELECT action, COUNT(*) FROM search_feedback GROUP BY act
 | T1 | `_parse_srt()` 遇到纯中文 SRT 返回 0 行 | `subtitle_parser.py` | 使用 `_parse_srt_text_only()` 解析中文 SRT |
 | T2 | 上传字幕后知识库没有新节点 | `subtitle_pipeline.py` | 字幕先存 subtitles_raw，需调 `sync-passed` 才同步知识库 |
 | T3 | FAISS 索引与 DB 不一致 | `main.py: lifespan` | 启动时自动校验并重建，手动重建调 `rebuild_index_from_db` |
-| T4 | Windows 启动报 WinError 10013 端口占用 | `start.ps1` | 脚本已自动 kill 占用端口的旧进程 |
+| T4 | Windows 启动报 WinError 10013 端口占用 | `scripts/startup/start.ps1` | 脚本已自动 kill 占用端口的旧进程 |
 | T5 | PowerShell 执行 Python 多行 `-c` 语法报错 | Windows 特有 | 写临时 `.py` 文件再运行，避免 PowerShell 引号嵌套 |
 | T6 | `asyncio.create_task()` 必须在事件循环中调用 | `knowledge.py` | `_trigger_deprecated_analysis` 已用 try/except 包裹，失败只记 warning |
 | T7 | SQLite WAL 下写事务会锁定，避免大事务 | `database.py` | 批量操作分块（`_CHUNK = 200`），每块单独 commit |

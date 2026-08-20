@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   Header, Footer, AlignmentType, HeadingLevel, BorderStyle, WidthType,
@@ -644,7 +645,7 @@ const doc = new Document({
 });
 
 // ── Output ──
-const outPath = "D:\\Dramalingo_mvp\\Dramalingo_mvp-main\\DramaLingo_MVP_产品测评报告.docx";
+const outPath = path.join(__dirname, "DramaLingo_MVP_产品测评报告.docx");
 Packer.toBuffer(doc).then(buffer => {
   fs.writeFileSync(outPath, buffer);
   console.log("Report generated:", outPath);

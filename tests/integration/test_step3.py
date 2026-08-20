@@ -8,7 +8,9 @@ import sys
 import warnings
 warnings.filterwarnings("ignore")
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
+from config import INDEX_DIR
 
 print("=" * 60)
 print("Step 3 · Embedding + FAISS 索引 · 交付标准验证")
@@ -91,7 +93,7 @@ print("  ✅ 增量添加正常")
 print("\n[测试 5] 索引持久化（保存 + 加载）")
 from services.faiss_index import save_index, load_index
 
-save_path = "indexes/test.index"
+save_path = str(INDEX_DIR / "test.index")
 save_index(index, mapping, save_path)
 print(f"  索引已保存到 {save_path}")
 assert os.path.exists(save_path), f"索引文件不存在: {save_path}"
@@ -139,7 +141,7 @@ async def test_rebuild():
         rebuilt_index, rebuilt_mapping = await rebuild_index_from_db(
             session,
             force_full=True,
-            index_path="indexes/knowledge.index",
+            index_path=str(INDEX_DIR / "knowledge.index"),
         )
         print(f"  重建后索引大小: {rebuilt_index.ntotal}")
         assert rebuilt_index.ntotal >= 1, "重建后索引为空"
@@ -153,7 +155,7 @@ asyncio.run(test_rebuild())
 # ──────────────────────────────────────────────
 print("\n[验证] 索引文件生成")
 import subprocess
-result = subprocess.run(["ls", "-lh", "indexes/"], capture_output=True, text=True)
+result = subprocess.run(["ls", "-lh", str(INDEX_DIR)], capture_output=True, text=True)
 print(result.stdout)
 assert "knowledge.index" in result.stdout, "knowledge.index 文件不存在"
 assert "knowledge.index.mapping.json" in result.stdout, "映射文件不存在"

@@ -8,7 +8,9 @@ import sys
 import os
 
 # 确保项目根目录在 Python 路径中
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
+TEST_SUBTITLE = os.path.join(PROJECT_ROOT, "tests", "fixtures", "test_subtitle.srt")
 
 
 def test_subtitle_parser():
@@ -16,7 +18,7 @@ def test_subtitle_parser():
     print("=" * 50)
     print("验证 1：字幕解析")
     from services.subtitle_parser import parse_subtitle
-    lines = parse_subtitle("test_subtitle.srt")
+    lines = parse_subtitle(TEST_SUBTITLE)
     print(f"  解析行数: {len(lines)}")
     assert len(lines) > 0, "解析失败：行数为 0"
     print(f"  前 3 行示例:")
@@ -63,7 +65,7 @@ async def test_pipeline():
 
     async with SessionLocal() as session:
         result = await process_subtitle_file(
-            file_path="test_subtitle.srt",
+            file_path=TEST_SUBTITLE,
             show_name="TestShow",
             episode="S01E01",
             session=session,
@@ -86,7 +88,7 @@ def test_database_records():
     print("验证 4：数据库记录分布（sqlite3）")
     import subprocess
     result = subprocess.run(
-        ["sqlite3", "dramalingo.db",
+        ["sqlite3", os.path.join(PROJECT_ROOT, "data", "dramalingo.db"),
          "SELECT filter_status, COUNT(*) FROM subtitles_raw GROUP BY filter_status;"],
         capture_output=True, text=True
     )

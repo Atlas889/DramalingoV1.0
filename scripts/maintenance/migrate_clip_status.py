@@ -1,6 +1,6 @@
 """迁移 clips.clip_status：旧状态 → 新三状态体系"""
 import asyncio, sys, os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from database import SessionLocal
 from sqlalchemy import text
 

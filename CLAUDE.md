@@ -27,6 +27,10 @@ routers/         — FastAPI 路由（6 个模块，~70 个接口）
 services/        — 核心业务逻辑（14 个服务）
 tasks/           — 串行异步任务调度器（asyncio.Queue + DB 持久化）
 static/          — 前端 HTML（admin.html + user.html）
+data/            — SQLite、FAISS、媒体、上传和任务状态数据
+tests/            — 集成测试与测试夹具
+scripts/          — 启动、维护和诊断脚本
+docs/reports/     — 产品测评报告和生成脚本
 config.py        — 全局配置参数（所有算法阈值/权重集中管理）
 database.py      — DB 引擎/Session/Base/迁移
 main.py          — 应用入口/lifespan/增量迁移/路由注册
@@ -65,7 +69,7 @@ main.py          — 应用入口/lifespan/增量迁移/路由注册
 .venv\Scripts\python.exe -c "from main import app; print(f'Routes: {len(app.routes)}')"
 
 # 运行冒烟测试
-.venv\Scripts\python.exe smoke_test.py
+.venv\Scripts\python.exe tests\integration\smoke_test.py
 ```
 
 ## 已知陷阱

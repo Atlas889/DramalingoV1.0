@@ -1,6 +1,6 @@
 """验证 aligner 修复后对 'Like there's a rule' 的匹配结果"""
 import asyncio, sys, os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from database import SessionLocal
 from sqlalchemy import text

@@ -19,15 +19,16 @@ except ImportError:
 # ──────────────────────────────────────────────
 BASE_DIR = Path(__file__).resolve().parent
 
-# 文件存储根目录：优先读取环境变量，默认为 E:\dramalingo-files
-_FILES_ROOT = Path(os.getenv("DRAMALINGO_FILES_ROOT", r"E:\dramalingo-files"))
+# 文件存储根目录：优先读取环境变量，默认归档到项目 data/ 目录。
+# 生产环境建议通过 DRAMALINGO_FILES_ROOT 指向独立磁盘，避免媒体文件占用代码仓库空间。
+_FILES_ROOT = Path(os.getenv("DRAMALINGO_FILES_ROOT", str(BASE_DIR / "data")))
 
 MEDIA_DIR  = _FILES_ROOT / "media"         # 视频文件 & 切片文件
 UPLOAD_DIR = _FILES_ROOT / "uploads"       # 字幕/视频上传临时目录
 INDEX_DIR  = _FILES_ROOT / "indexes"       # FAISS 索引文件
 
-STATIC_DIR = BASE_DIR / "static"           # 前端静态文件（保留在代码目录）
-DB_PATH    = BASE_DIR / "dramalingo.db"    # 数据库（保留在代码目录）
+STATIC_DIR = BASE_DIR / "static"           # 前端静态文件
+DB_PATH    = BASE_DIR / "data" / "dramalingo.db"  # SQLite 数据库与运行数据分离
 
 # ──────────────────────────────────────────────
 # 字幕筛选参数（PRD §6.1）

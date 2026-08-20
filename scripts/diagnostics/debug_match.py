@@ -3,7 +3,7 @@
 用法: python scripts/debug_match.py "Like there's a rule"
 """
 import asyncio, sys, os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from database import SessionLocal
 from sqlalchemy import text

@@ -1,6 +1,6 @@
 """
 DramaLingo 冒烟测试脚本
-运行方式：.venv\Scripts\python.exe smoke_test.py
+运行方式：.venv\Scripts\python.exe tests\integration\smoke_test.py
 要求：服务已在 http://127.0.0.1:8000 运行
 """
 

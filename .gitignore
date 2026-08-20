@@ -12,6 +12,7 @@ build/
 venv/
 .venv/
 env/
+node_modules/
 
 # IDE
 .vscode/
@@ -27,6 +28,9 @@ env/
 # Runtime directories (generated at startup)
 media/
 indexes/
+data/media/
+data/indexes/
+data/uploads/
 
 # OS files
 .DS_Store
@@ -35,6 +39,7 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+**/.claude/settings.local.json
 
 # Logs
 *.log
