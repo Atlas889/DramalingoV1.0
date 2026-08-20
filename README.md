@@ -1,4 +1,4 @@
-# DramaLingo · 影视表达检索引擎
+# RoadNet_Control · DramaLingo 影视表达检索引擎
 
 ![Status](https://img.shields.io/badge/Status-MVP-success)
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
@@ -6,7 +6,29 @@
 ![FAISS](https://img.shields.io/badge/FAISS-1.8.0-orange)
 ![SQLite](https://img.shields.io/badge/SQLite-WAL-lightgrey)
 
-**DramaLingo** 是面向中国英语学习者的「影视表达检索引擎」——用中文描述你想说的话，系统自动从结构化的影视台词知识库中找到最地道的英文说法，连同真实的影视场景视频片段一起呈现。
+**DramaLingo** 是面向中国英语学习者的影视表达检索引擎——用中文描述你想说的话，系统自动从结构化的影视台词知识库中找到自然、地道的英文表达，并通过真实影视场景视频片段帮助用户理解语境。
+
+本仓库 `RoadNet_Control` 现阶段承载 DramaLingo 的完整 MVP，包括用户检索端、内容生产管理后台、字幕知识库构建、视频转写与切片，以及基于向量检索和 AI 重排的语义搜索能力。
+
+### 当前版本亮点
+
+- **检索链路**：中文意图识别 → 多信号向量检索 → AI 相关性重排 → 台词与视频片段联动展示。
+- **内容生产**：支持字幕导入、质量评分、去重、语义标签、向量索引构建和视频片段生成。
+- **技术架构**：FastAPI + SQLAlchemy Async + SQLite WAL + FAISS + Sentence-Transformers + Whisper + FFmpeg。
+- **界面规范**：管理后台和用户端采用统一的 Arco Design 风格，使用本地矢量图标资源和项目 Logo，便于离线部署与后续迭代。
+- **工程特性**：后台任务状态可追踪，处理流程支持断点续跑，文件根目录和 AI 服务均可通过环境变量配置。
+
+### 快速入口
+
+启动服务后可访问：
+
+| 页面 | 地址 | 用途 |
+| --- | --- | --- |
+| 用户端 | `http://localhost:8000/` | 中文描述检索英文影视表达 |
+| 管理后台 | `http://localhost:8000/admin` | 管理内容、知识节点、索引和视频任务 |
+| API 文档 | `http://localhost:8000/docs` | 查看和调试 FastAPI 接口 |
+
+详细的系统架构、数据模型、算法参数、环境变量和 API 说明见下文。
 
 ---
 
